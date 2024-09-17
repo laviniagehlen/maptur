@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.cadastro {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.cadastro-content {
+    width: 50%;
+    height: 70%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(180,144,255,1) 54%, rgba(135,79,255,1) 100%);
+}
+
+.cadastro-form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conteúdo/Caixa do Modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% do topo, 15% da parte inferior e centralizado */
+    border: 1px solid #d05b5b;
+    width: 15%; /* Pode variar dependendo do tamanho da tela */
+}
+
+/* Estilo para a régua horizontal */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+/* Muda os estilos dos botões de cancelar e inscrever-se em telas extra pequenas */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
