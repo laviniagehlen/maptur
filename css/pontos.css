@@ -2,17 +2,66 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-p{
+p {
     font-family: Arial, Helvetica, sans-serif
 }
 
 .carrossel {
     height: 250px;
     width: 250px;
+    border-radius: 10px;
 }
 
-.sugestao{
-    height: 290px;
-    width: 290px;
+.sugestao {
     border-radius: 10px;
+    height: 250px;
+}
+
+.card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.visitados {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100;
+}
+
+.circulo {
+    width: 350px; /* Largura do círculo */
+    height: 350px; /* Altura do círculo */
+    background-color: #EAE0FF; /* Cor de fundo */
+    border-radius: 50%; /* Deixa as bordas arredondadas formando um círculo */
+    margin-bottom: 50px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: flex-end;
 }
