@@ -5,8 +5,38 @@
 
 body {}
 
+header {
+    background-color: #B490FF;
+    color: #e2dada;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+
+}
+
 main {
-    /*texto*/
+    /*texto1*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #141313;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+main {
+    /*texto2*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,39 +49,32 @@ main {
 
 .flex-content {
     display: flex;
-    border-radius: 60px;
+    justify-content: space-around;
+    border-radius: 50px;
     background-color: #e9dfff;
-    width: 50%;
-    height: 40%;
-    padding: 10%;
+    width: 90%;
+    height: 50%;
+    padding: 0%;
+    padding-top: 10%;
 
 }
 
 .circulo {
     background-color: #AFB3FF;
-    width: 30%;
-    height: 50%;
+    width: 20%;
+    height: 40%;
     border-radius: 50%;
     position: absolute;
-    left: 5%;
+    left: 0%;
     bottom: 0;
 }
 
-form {
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #f3efef;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(20, 20, 20, 0.1);
-    padding: 5%;
-    height: 100%;
-}
 
 form h2 {
     margin-top: 0;
     color: #f7f1f5;
     text-align: center;
+    width:max-content
 }
 
 label {
@@ -73,10 +96,66 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #9d7ee0;
+    background-color: #ae8ff1;
     color: #fcf8f8;
     border-radius: 20%;
     margin-bottom: 300px;
-    width: 40%;
-    border: 10px ;
+    width:50px;
+    border: 10px;
+}
+/* Modal*/
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #039d63;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    justify-content: center;
+    align-items: start;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 8px;
+    margin-top: 10%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
 }
