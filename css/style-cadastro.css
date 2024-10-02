@@ -1,45 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .cadastro {
-    width: 50%;
-    height: 50vh;
+    width: 60%;
+    height: 70vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
 
 }
 
 .cadastro-content {
     width: 50%;
-    height: 70%;
+    height: 50%;
     background: rgb(244, 241, 241);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(180,144,255,1) 54%, rgba(135,79,255,1) 100%);
+    background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgba(135, 79, 255, 1) 100%);
 }
 
-.cadastro-form{
+.cadastro-form {
     display: flex;
     flex-direction: column;
+}
+
+.cadastro-content {
+    font-size: 20px;
+    padding-top: 10;
+    grid-area: title;
+    text-align: center;
+
+}
+
+.icone {
+    width: 10%;
+    height: 10px;    
+}     
+    .cadastro-form {
+    padding: 50px;
+
+    }
+
+button {
+    padding: 0px 0px;
+    background-color: #9853f1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 /* Conteúdo/Caixa do Modal */
 .modal-content {
     background-color: #fefefe;
-    margin: 2% auto 5% auto; /* 5% do topo, 15% da parte inferior e centralizado */
-    border: 1px solid #d05b5b;
-    width: 15%; /* Pode variar dependendo do tamanho da tela */
+    margin: 2% auto 5% auto;
+    /* 5% do topo, 15% da parte inferior e centralizado */
+    background-color: #fefefe;
+    width: 20%;
+    /* Pode variar dependendo do tamanho da tela */
 }
 
 /* Estilo para a régua horizontal */
@@ -47,9 +76,14 @@ hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
+
 /* Muda os estilos dos botões de cancelar e inscrever-se em telas extra pequenas */
 @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
     }
+
+
 }
