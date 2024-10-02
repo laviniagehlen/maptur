@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../img/rosa.png" alt="Logo">
+            <img src="../img/logo.png" alt="Logo">
         </div>
         <nav>
             <ul>
@@ -30,42 +30,62 @@
         </div>
     </header>
     <main>
-        <section class="slides">
-            <div>
-                <img class="carrossel" src="../img/lilás.jpg">
+        <section class="carrossel">
+
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="../img/roda-gigante.jpg" style="width:100%">
+              <div class="text">Pontos Turísticos</div>
             </div>
-            <div>
-                <img class="carrossel" src="../img/lilás.jpg">
+        
+            <div class="mySlides fade">
+              <img src="../img/cidades.avif" style="width:100%">
+              <div class="text">Lugares de lazer</div>
             </div>
-            <div>
-                <img class="carrossel" src="../img/lilás.jpg">
+        
+            <div class="mySlides fade">
+              <img src="../img/restaurante.avif" style="width:100%">
+              <div class="text">Restaurantes</div>
             </div>
+        
+          </div>
+          <br>
+        
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        
         </section>
+          
         <section class="galeria">
             <div class="card">
-                <img class="sugestao" src="../img/lilas2.jpg">
-                <h3>Legenda</h3>
+                <img class="sugestao" src="../img/catedral-da-sé.jpg">
+                <h3 class="legenda-foto">Catedra da Sé</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy 
+                    text ever since the 1500s, when an unknown printer 
+                    took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="card">
+                <img class="sugestao" src="../img/roda-rico.webp">
+                <h3 class="legenda-foto">Roda Rico</h3>
                 <p>Lorem Ipsum has been the industry's standard dummy 
                     text ever since the 1500s, when an unknown printer 
                     took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
             <div class="card">
                 <img class="sugestao" src="../img/lilas2.jpg">
-                <h3>Legenda</h3>
+                <h3 class="legenda-foto">Legenda</h3>
                 <p>Lorem Ipsum has been the industry's standard dummy 
                     text ever since the 1500s, when an unknown printer 
                     took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
             <div class="card">
                 <img class="sugestao" src="../img/lilas2.jpg">
-                <h3>Legenda</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy 
-                    text ever since the 1500s, when an unknown printer 
-                    took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="card">
-                <img class="sugestao" src="../img/lilas2.jpg">
-                <h3>Legenda</h3>
+                <h3 class="legenda-foto">Legenda</h3>
                 <p>Lorem Ipsum has been the industry's standard dummy 
                     text ever since the 1500s, when an unknown printer 
                     took a galley of type and scrambled it to make a type specimen book.</p>
@@ -85,23 +105,27 @@
     <footer>
         <div>
         <h3>titulo</h3>
-        <p>since the 1500s, when an unknown printer took a galley of 
-            type and scrambled it to make a type specimen book.since the 1500s, when an unknown printer took a galley of 
-            type and scrambled it to make a type specimen book.</p>
+        <p>since the 1500s, when an unknown printer took a galley <br>
+            of type and scrambled it to make a type specimen book. <br>
+            since the 1500s, when an unknown printer took a galley <br>
+            of type and scrambled it to make a type specimen book.</p>
         </div>
         <div>
         <h3>titulo</h3>
-        <p>since the 1500s, when an unknown printer took a galley of 
-            type and scrambled it to make a type specimen book.since the 1500s, when an unknown printer took a galley of 
-            type and scrambled it to make a type specimen book.</p>
+        <p>since the 1500s, when an unknown printer took a galley <br>
+            of type and scrambled it to make a type specimen book. <br>
+            since the 1500s, when an unknown printer took a <br>
+            galley of type and scrambled it to make a type specimen book.</p>
         </div>
         <div>
         <h3>titulo</h3>
-        <p>since the 1500s, when an unknown printer took a galley of 
-                type and scrambled it to make a type specimen book.since the 1500s, when an unknown printer took a galley of 
-                type and scrambled it to make a type specimen book.</p>
+        <p>since the 1500s, when an unknown printer took a galley <br>
+            of type and scrambled it to make a type specimen book. <br>
+            since the 1500s, when an unknown printer took a <br>
+            galley of type and scrambled it to make a type specimen book.</p>
             </div>
       </footer>
+      <script src="../js/pontos-script.js"></script>
 </body>
 
 </html>
