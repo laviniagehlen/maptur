@@ -19,8 +19,8 @@ body{
 
 .img-banner{
     width: 80%;
-    height: 10vh;
-    background-color: black;
+    height: 20vh;
+    background-color: rgb(196, 182, 182);
     margin-bottom: 5%;
 }
 
@@ -35,7 +35,7 @@ body{
 }
 
 .img-1{
-    width: 30%;
+    width: 20%;
     height: 30vh;
     border-radius: 50%;
     background-color: blue;
@@ -47,7 +47,7 @@ body{
 
 }
 .img-2{
-    width: 30%;
+    width: 20%;
     height: 30vh;
     border-radius: 50%;
     background-color: blue;
@@ -59,10 +59,50 @@ body{
     width: 100%;
 }
 
+.section-container{
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    align-items:center ;
+    margin-top: 5%;
+
+}
+
+.img-3{
+    width: 30%;
+    height: 30vh;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.text-3{
+    width: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
 .segundo{
-    margin-top: 40px;
+    margin-top: 190px;
     height:20vh;
-    width: 400vh;
+    width: 125%;
+    
+}
+
+.missao{
+    height: 90px;
+    width:  90px
+    margin-left: 10px;
+   
+}
+.visao{
+    height: 90px;
+    width: 90px; 
+    margin-left: 10px;
+}
+.valores{
+    height: 90px;
+    width: 90px;
 }
  .sobre{
     background-color: rgb(105, 45, 184);
@@ -72,11 +112,9 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
-
-
-    
-   
+    margin-top: 10px;
 
  }
+
 
  
