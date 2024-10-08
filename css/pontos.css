@@ -1,132 +1,147 @@
 body {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .carrossel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2%;
 }
 
 .sugestao {
-    border-radius: 10px;
-    height: 250px;
+  border-radius: 10px;
+  height: 250px;
 }
 
 .card {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: center;
-    margin-right: 20px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 
 }
 
 .galeria {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center
 }
 
 h2 {
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: flex-end;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .visitados {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100;
 }
 
 .circulo {
-    width: 350px; /* Largura do círculo */
-    height: 350px; /* Altura do círculo */
-    background-color: #EAE0FF; /* Cor de fundo */
-    border-radius: 50%; /* Deixa as bordas arredondadas formando um círculo */
-    margin-bottom: 50px;
+  width: 350px;
+  /* Largura do círculo */
+  height: 350px;
+  /* Altura do círculo */
+  background-color: #EAE0FF;
+  /* Cor de fundo */
+  border-radius: 50%;
+  /* Deixa as bordas arredondadas formando um círculo */
+  margin-bottom: 50px;
 }
 
 .descricao {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*CARROSSEL*/
 
 .slideshow-container {
-    width: 60%;
-    position: relative;
+  width: 60%;
+  position: relative;
+}
+
+
+/* Texto da legenda */
+.text {
+  color: #ffffff;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Os pontos/bullets/indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #a8a8a8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #c090ff;
+}
+
+/* Animação de desvanecimento */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
   }
-  
-  
-  /* Texto da legenda */
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Em telas menores, diminui o tamanho do texto */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
   .text {
-    color: #ffffff;
-    font-size: 35px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 8px;
-    width: 100%;
-    text-align: center;
+    font-size: 11px
   }
-  
-  
-  /* Os pontos/bullets/indicadores */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #a8a8a8;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.5s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #c090ff;
-  }
-  
-  /* Animação de desvanecimento */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* Em telas menores, diminui o tamanho do texto */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+}
 
-  .legenda-foto {
-    margin-top: 20px;
-  }
+.legenda-foto {
+  margin-top: 20px;
+}
 
-  .mySlides {
-    border-radius: 20px;
-  }
+.mySlides {
+  border-radius: 20px;
+}
