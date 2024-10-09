@@ -16,9 +16,13 @@ p {
   margin-top: 2%;
 }
 
-.sugestao {
+a .sugestao {
   border-radius: 10px;
   height: 250px;
+  flex-direction: column;
+  display: flex;
+  justify-content: baseline;
+  margin-right: 10px;
 }
 
 .card {
@@ -26,10 +30,9 @@ p {
   margin-bottom: 50px;
   justify-content: center;
   margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 55px;
   display: flex;
   flex-direction: column;
-
 }
 
 .galeria {
@@ -59,20 +62,34 @@ h2 {
 }
 
 .circulo {
-  width: 350px;
+  width: 400px;
   /* Largura do círculo */
-  height: 350px;
+  height: 400px;
   /* Altura do círculo */
   background-color: #EAE0FF;
   /* Cor de fundo */
   border-radius: 50%;
   /* Deixa as bordas arredondadas formando um círculo */
   margin-bottom: 50px;
+  margin-left: 20px;
 }
 
 .descricao {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 200px;
+}
+
+.titulo-visitados {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 200px;
 }
 
 /*CARROSSEL*/
@@ -144,4 +161,24 @@ h2 {
 
 .mySlides {
   border-radius: 20px;
+}
+
+#backToTopBtn {
+  display: none; /* Oculto por padrão */
+  position: fixed; /* Fixo no canto inferior direito */
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; /* Fica sobre outros elementos */
+  font-size: 18px;
+  background-color: #000; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem bordas */
+  padding: 15px;
+  border-radius: 10px; /* Borda arredondada */
+  cursor: pointer; /* Mãozinha no hover */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#backToTopBtn:hover {
+  background-color: #b490ff; /* Cor quando o mouse passa em cima */
 }

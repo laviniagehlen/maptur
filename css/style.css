@@ -80,12 +80,13 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: rgba(180, 144, 255, 1);
-    height: 200px;
+    background-color: #9480a7;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    color: white;
 }
 
 /* Em telas menores, diminui o tamanho do texto */
