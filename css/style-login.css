@@ -5,23 +5,23 @@ body{
     align-items:center;
 }
 
-.cadastro {
+.cadastro{
     width: 100%;
     height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0px;
-
 }
 
-.cadastro-content {
-    width:50%;
+
+
+.cadastro{
+    background-color: #9853f1;
+    width:500%;
     height: 0%;
     background: rgb(239, 237, 237);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(180,144,255,1) 54%, rgba(135,79,255,1) 100%);
 }
-
 .cadastro-form{
     display: flex;
     flex-direction: column;

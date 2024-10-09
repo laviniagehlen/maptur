@@ -10,6 +10,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+   
 }
 
 .cadastro {
@@ -23,33 +25,42 @@ body {
 }
 
 .cadastro-content {
-    width: 50%;
-    height: 50%;
+    width:50%;
+    height: 70%;
+    justify-content: center;
     background: rgb(244, 241, 241);
-    background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgba(135, 79, 255, 1) 100%);
+    background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
 }
 
+
 .cadastro-form {
+    font-size: 20px;
+    padding-top: 70;
     display: flex;
     flex-direction: column;
 }
 
 .cadastro-content {
     font-size: 20px;
-    padding-top: 10;
+    padding-top: 20;
     grid-area: title;
-    text-align: center;
+    text-align: center; 
 
+}
+
+footer {
+    width: 150%;
+    height: 50px;    
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgba(135, 79, 255, 1) 100%);
 }
 
 .icone {
     width: 10%;
     height: 10px;    
+    color: rgb(15, 15, 15);
+    justify-content: center;
 }     
-    .cadastro-form {
-    padding: 50px;
-
-    }
 
 button {
     padding: 0px 0px;
@@ -60,30 +71,25 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
+ 
 
 /* Conteúdo/Caixa do Modal */
-.modal-content {
-    background-color: #fefefe;
-    margin: 2% auto 5% auto;
-    /* 5% do topo, 15% da parte inferior e centralizado */
-    background-color: #fefefe;
-    width: 20%;
-    /* Pode variar dependendo do tamanho da tela */
+.body{
+    font-size: 16px;
 }
 
 /* Estilo para a régua horizontal */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+@media (max-width: 100px) {
+
+    body{
+        font-size: 10px;
+   
+}
+/* ajustes adicionais */
+
 }
 
-/* Muda os estilos dos botões de cancelar e inscrever-se em telas extra pequenas */
-@media screen and (max-width: 300px) {
-
-    .cancelbtn,
-    .signupbtn {
-        width: 100%;
-    }
-
-
+img {
+    max-width: 50px;
+    height: 50px;
 }
