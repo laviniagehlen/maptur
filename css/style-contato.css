@@ -1,9 +1,11 @@
 * {
-    padding: 0;
+    padding: 10;
     margin: 0;
 }
 
-body {}
+body {
+    background-color: #ece5fd;
+}
 
 header {
     background-color: #B490FF;
@@ -19,29 +21,13 @@ nav ul li {
 
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 100px;
-
-}
-
-img {
-    width: 200px; /* Define a largura */
-    height: auto;/* Mantém a proporção da imagem */
-    border: 2px solid #0a0a0a; /* Adiciona uma borda */
-    border-radius: 10px; /* Arredonda os cantos */
-
-    box-shadow: 5px 5px 15px rgba(10, 10, 10, 0.3);/* Adiciona uma sombra */
-}
-
-
 main {
     /*texto1*/
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    color: #0c0c0c;
+    color: #0a0a0a;
     padding: 10px;
     width: 10%;
     height: 100%;
@@ -53,10 +39,18 @@ main {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    color: #0f0f0f;
+    color: #111111;
     padding: 10px;
     width: 100%;
     height: 100%;
+}
+
+img {
+    width: 200px;/* Define a largura */
+    height: 100px;/* Mantém a proporção da imagem */
+    border: 0px solid #535252; /* Adiciona uma borda */
+    border-radius: auto;/* Arredonda os cantos */
+    box-shadow: 5px 5px 15px rgba(10, 10, 10, 0.3);/* Adiciona uma sombra */
 }
 
 .flex-content {
@@ -73,8 +67,8 @@ main {
 
 .circulo {
     background-color: #AFB3FF;
-    width: 20%;
-    height: 40%;
+    width: 10%;
+    height: 20%;
     border-radius: 50%;
     position: absolute;
     left: 20%;
@@ -86,7 +80,8 @@ form h2 {
     margin-top: 0;
     color: #f3f3f7;
     text-align: center;
-    width: max-content
+    width: max-content;
+
 }
 
 label {
@@ -101,8 +96,8 @@ input[type="email"],
 
 textarea {
     width: 80%;
-    padding: 10px;
-    margin-bottom: 5px;
+    padding: 5px;
+    margin-bottom: 0px;
     border: 1px solid #874FFF;
     border-radius: 25px;
 
@@ -157,7 +152,7 @@ input[type="submit"] {
 }
 
 footer {
-    background-color: #0f0e0e;
+    background-color: #B490FF;
     color: #fff;
     text-align: center;
     padding: 10px 0;
