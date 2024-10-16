@@ -41,7 +41,7 @@ body {
 }
 
 .cadastro-content {
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 20;
     grid-area: title;
     text-align: center; 
@@ -49,8 +49,8 @@ body {
 }
 
 footer {
-    width: 150%;
-    height: 50px;    
+    width: 120%;
+    height: 30px;    
     justify-content: center;
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgba(135, 79, 255, 1) 100%);
 }
@@ -90,6 +90,6 @@ button {
 }
 
 img {
-    max-width: 50px;
+    max-width: 70px;
     height: 50px;
 }
