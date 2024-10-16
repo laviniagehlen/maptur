@@ -1,29 +1,19 @@
+const scrollContainer = document.getElementById('scrollContainer');
 
-// Limpar Formulário
-function limparFormulario() {
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
-}
+    function scrollImages() {
+        scrollContainer.scrollLeft += 1;
 
-// Exibir Modal
-function exibirModal() {
-    document.getElementById("modal").style.display = "flex";
-}
-
-// Fechar Modal
-function fecharModal() {
-    document.getElementById("modal").style.display = "none";
-    limparFormulario();
-}
-
-
-// Fechar modal ao clicar no "x"
-document.querySelector('.close').onclick = fecharModal;
-
-// Fechar modal ao clicar fora do conteúdo
-window.onclick = function (event) {
-    if (event.target == document.getElementById("modal")) {
-        fecharModal();
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+            scrollContainer.scrollLeft = 0;
+        }
     }
-}
+
+    let scrollInterval = setInterval(scrollImages, 20);
+
+    scrollContainer.addEventListener('mouseover', () => {
+        clearInterval(scrollInterval);
+    });
+
+    scrollContainer.addEventListener('mouseout', () => {
+        scrollInterval = setInterval(scrollImages, 20);
+    });

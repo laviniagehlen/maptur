@@ -6,11 +6,57 @@
 body {
     background-color: #ece5fd;
 }
+div.scroll-container {
+    background-color: #B490FF;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Indicadores (bolinhas abaixo do carrossel) */
+.dot-container {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 header {
     background-color: #B490FF;
     color: #f7f2f2;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 
 }
@@ -57,29 +103,20 @@ img {
     display: flex;
     justify-content: space-around;
     border-radius: 50px;
-    background-color: #e9dfff;
+    background-color: #c4b1f0;
     width: 50%;
     height: 50%;
-    padding: 0%;
+    padding: 15%;
     padding-top: 10%;
 
 }
 
-.circulo {
-    background-color: #AFB3FF;
-    width: 10%;
-    height: 20%;
-    border-radius: 50%;
-    position: absolute;
-    left: 20%;
-    bottom: 0;
-}
 
 
 form h2 {
     margin-top: 0;
     color: #f3f3f7;
-    text-align: center;
+    text-align: column;
     width: max-content;
 
 }
@@ -97,8 +134,8 @@ input[type="email"],
 textarea {
     width: 80%;
     padding: 5px;
-    margin-bottom: 0px;
-    border: 1px solid #874FFF;
+    margin-bottom: 5px;
+    border: 1px solid #8c71c9;
     border-radius: 25px;
 
 }
@@ -157,4 +194,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
+}
+h1{
+
 }
