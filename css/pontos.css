@@ -21,7 +21,6 @@ a .sugestao {
   height: 250px;
   flex-direction: column;
   display: flex;
-  justify-content: baseline;
   margin-right: 10px;
 }
 
@@ -153,7 +152,7 @@ h2 {
   .text {
     font-size: 11px
   }
-}
+
 
 .legenda-foto {
   margin-top: 20px;
@@ -181,4 +180,32 @@ h2 {
 
 #backToTopBtn:hover {
   background-color: #b490ff; /* Cor quando o mouse passa em cima */
+}
+
+.titulo{
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  width: 30px;
+}
+
+a .sugestão {
+  height: 50px;
+}
+
+.visitados {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 }
