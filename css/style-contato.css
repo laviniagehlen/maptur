@@ -6,6 +6,7 @@
 body {
     background-color: #ece5fd;
 }
+
 div.scroll-container {
     background-color: #B490FF;
     overflow: hidden;
@@ -23,34 +24,36 @@ div.scroll-container img {
 }
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Indicadores (bolinhas abaixo do carrossel) */
 .dot-container {
-  text-align: center;
-  padding: 10px;
-  background: #ddd;
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
 }
 
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 header {
@@ -92,18 +95,22 @@ main {
 }
 
 img {
-    width: 200px;/* Define a largura */
-    height: 100px;/* Mantém a proporção da imagem */
-    border: 0px solid #535252; /* Adiciona uma borda */
-    border-radius: auto;/* Arredonda os cantos */
-    box-shadow: 5px 5px 15px rgba(10, 10, 10, 0.3);/* Adiciona uma sombra */
+    width: 200px;
+    /* Define a largura */
+    height: 100px;
+    /* Mantém a proporção da imagem */
+    border: 0px solid #535252;
+    /* Adiciona uma borda */
+    border-radius: auto;
+    /* Arredonda os cantos */
+    box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.3);
+    /* Adiciona uma sombra */
 }
 
 .flex-content {
     display: flex;
     justify-content: space-around;
     border-radius: 50px;
-    background-color: #c4b1f0;
     width: 50%;
     height: 50%;
     padding: 15%;
@@ -111,7 +118,13 @@ img {
 
 }
 
-
+img {
+    width: 400px;
+    height: 500px;
+    border: 0px solid #535252;
+    border-radius: auto;
+    box-shadow: 5px 5px 15px rgba(10, 10, 10, 0.3);
+}
 
 form h2 {
     margin-top: 0;
@@ -144,9 +157,10 @@ input[type="submit"] {
     background-color: #ae8ff1;
     color: #fcf8f8;
     border-radius: 20%;
-    margin-bottom: 300px;
-    width: 50px;
-    border: 10px;
+    margin-bottom: 10px;
+    width: 60px;
+    border: 50px;
+    text-align: center;
 }
 
 
@@ -195,6 +209,18 @@ footer {
     padding: 10px 0;
     width: 100%;
 }
-h1{
 
+h1 {
+    text-align: column;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 300px;
+    /* Flexível com largura mínima de 300px */
 }
