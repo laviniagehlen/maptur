@@ -10,9 +10,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-   
 }
+
 
 .cadastro {
     width: 60%;
@@ -25,8 +24,8 @@ body {
 }
 
 .cadastro-content {
-    width:50%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     justify-content: center;
     background: rgb(244, 241, 241);
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
@@ -41,51 +40,65 @@ body {
 }
 
 .cadastro-content {
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 20;
     grid-area: title;
-    text-align: center; 
+    text-align: center;
 
 }
 
 footer {
     width: 120%;
-    height: 30px;    
+    height: 30px;
     justify-content: center;
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgba(135, 79, 255, 1) 100%);
 }
 
-.icone {
-    width: 10%;
-    height: 10px;    
-    color: rgb(15, 15, 15);
-    justify-content: center;
-}     
+.input-icone {
+    position: relative;
+    display: inline-block;
+}
+
+.input-icone input {
+    padding-left: 30px;
+    height: 3vh;
+}
+
+.input-icone i {
+    position: absolute;
+    left: 10px;
+    /* Posição do ícone */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centraliza verticalmente */
+    color: #777676;
+    /* Cor do ícone */
+}
 
 button {
     padding: 0px 0px;
-    background-color: #9853f1;
-    color: white;
+    background-color: #b98ff0d0;
+    color: rgb(37, 37, 37);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
- 
 
 /* Conteúdo/Caixa do Modal */
-.body{
+.body {
     font-size: 16px;
 }
 
 /* Estilo para a régua horizontal */
 @media (max-width: 100px) {
 
-    body{
+    body {
         font-size: 10px;
-   
-}
-/* ajustes adicionais */
+
+    }
+
+    /* ajustes adicionais */
 
 }
 
