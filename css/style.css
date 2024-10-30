@@ -90,11 +90,45 @@ footer {
 }
 
 /* Em telas menores, diminui o tamanho do texto */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
 
     .prev,
     .next,
     .text {
       font-size: 11px
     }
+
+    header {
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    .logo img {
+        width: 0px;
+    }
+
+    .app {
+        height: 35px;
+        margin-left: 0%;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
+
   }
