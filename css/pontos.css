@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #fdfaff;
 }
 
 p {
@@ -101,13 +101,14 @@ h2 {
 
 /* Texto da legenda */
 .text {
-  color: #ffffff;
+  color: #260e41;
   font-size: 35px;
   padding: 8px 12px;
   position: absolute;
   top: 8px;
   width: 100%;
   text-align: center;
+  background-color: rgb(245, 242, 255);
 }
 
 
@@ -132,6 +133,26 @@ h2 {
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+#backToTopBtn {
+  display: none; /* Oculto por padrão */
+  position: fixed; /* Fixo no canto inferior direito */
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; /* Fica sobre outros elementos */
+  font-size: 18px;
+  background-color: #333333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem bordas */
+  padding: 15px;
+  border-radius: 10px; /* Borda arredondada */
+  cursor: pointer; /* Mãozinha no hover */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#backToTopBtn:hover {
+  background-color: #b490ff; /* Cor quando o mouse passa em cima */
 }
 
 @keyframes fade {
@@ -162,26 +183,6 @@ h2 {
   border-radius: 20px;
 }
 
-#backToTopBtn {
-  display: none; /* Oculto por padrão */
-  position: fixed; /* Fixo no canto inferior direito */
-  bottom: 20px;
-  right: 30px;
-  z-index: 99; /* Fica sobre outros elementos */
-  font-size: 18px;
-  background-color: #000; /* Cor de fundo */
-  color: white; /* Cor do texto */
-  border: none; /* Sem bordas */
-  padding: 15px;
-  border-radius: 10px; /* Borda arredondada */
-  cursor: pointer; /* Mãozinha no hover */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-#backToTopBtn:hover {
-  background-color: #b490ff; /* Cor quando o mouse passa em cima */
-}
-
 .titulo{
   font-size: 50px;
   margin-bottom: 40px;
@@ -197,6 +198,7 @@ h2 {
   margin-top: 50px;
   flex-wrap: wrap;
   width: 30px;
+
 }
 
 a .sugestão {
