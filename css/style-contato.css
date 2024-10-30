@@ -90,6 +90,7 @@ main {
 
 .info-content {
     width: 50%;
+
 }
 
 .info-content img {
@@ -214,6 +215,7 @@ h1 {
     main {
         height: auto;
     }
+
     .info-content {
         width: 100%;
         display: flex;
@@ -221,17 +223,30 @@ h1 {
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;
-    
+
     }
+
     .info-content h1 {
         text-align: center;
     }
-    .info-content img {
-       width: 80%;
-    }
 
-    form{
+    .info-content img {
         width: 80%;
     }
 
+    form {
+        width: 80%;
+    }
+
+    input[type="submit"] {
+        background-color: #ae8ff1;
+        color: #fcf8f8;
+        border-radius: 20%;
+        margin-bottom: 10px;
+        width: 60px;
+        border: 50px;
+        text-align: center;
+       
+    }
+    
 }
