@@ -109,6 +109,73 @@ img {
     animation-duration: 1.5s;
 }
 
+/* Feedback */
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.estrelas {
+    display: inline-block;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.estrela.checked {
+    color: #FFD700; /* cor da estrela quando selecionada */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#feedback {
+    margin-top: 30px;
+}
+
+#lista-avaliacoes {
+    margin-bottom: 50px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    margin-bottom: 150px;
+}
+
 @keyframes fade {
     from {
         opacity: .4
