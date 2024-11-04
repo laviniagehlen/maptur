@@ -44,6 +44,11 @@ nav ul li a {
     font-weight: 200;
 }
 
+.ativo{
+    color: #8c00ff !important;
+    text-decoration: underline !important;
+}
+
 nav ul li a:hover {
     color: #8c00ff;
 }
