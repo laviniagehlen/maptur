@@ -44,6 +44,7 @@ body {
 .img-1 img {
     width: 100%;
     height: auto;
+    margin-top: 0%;
 }
 
 .text-1 {
@@ -70,15 +71,13 @@ body {
 
 .text-2 {
     width: 40%;
-    background-color: rgb(42, 61, 165);
+    background-color: rgb(235, 235, 235);
     margin-top: 5%;
 }
 
 .img-3 {
-    width: 30%;
-    height: 50%;
-    background-color: rgb(255, 255, 255);
-    margin-top: 10%;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-3 img {
@@ -88,11 +87,14 @@ body {
 }
 
 .text-3 {
-    width: 40%;
-    height: 30vh;
-    background-color: rgb(111, 0, 255);
-    margin-top: 17%;
+    width: 30%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+    
 
 /*img-banner2*/
 .img-banner2 {
@@ -101,23 +103,23 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(196, 182, 182);
+    background-color: rgb(234, 199, 241);
     margin-bottom: 5%;
 }
 
 .missao {
-    height: 90px;
+    height: 80px;
     width: 90px;
 }
 
 .visao {
-    height: 90px;
+    height: 80px;
     width: 80px;
     list-style: none;
 }
 
 .valor {
-    height: 90px;
+    height: 80px;
     width: 80px;
 }
 
@@ -126,7 +128,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: rgb(156, 74, 233);
     border-radius: 50%;
     padding: 2%;
 }
