@@ -9,7 +9,7 @@ body {
 }
 
 div.scroll-container {
-    background-color: #B490FF;
+    background-color: #fefdff;
     overflow: hidden;
     white-space: nowrap;
     padding: 10px;
@@ -90,13 +90,19 @@ main {
 
 .info-content {
     width: 50%;
+
 }
 
 .info-content img {
-    width: 80%;
-    border: 0px solid #535252;
-    border-radius: auto;
-    box-shadow: 5px 5px 15px rgba(10, 10, 10, 0.3);
+    width: 300px;
+    /* Largura do div */
+    height: 200px;
+    /* Altura do div */
+
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o div */
+    background-position: center;
+    /* Centraliza a imagem */
 }
 
 form h2 {
@@ -181,7 +187,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: fixed;
+
     bottom: 0px;
 }
 
@@ -214,6 +220,7 @@ h1 {
     main {
         height: auto;
     }
+
     .info-content {
         width: 100%;
         display: flex;
@@ -221,17 +228,31 @@ h1 {
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;
-    
+
+
     }
+
     .info-content h1 {
         text-align: center;
     }
+
     .info-content img {
-       width: 80%;
+        width: 80%;
     }
 
-    form{
+    form {
         width: 80%;
+    }
+
+    input[type="submit"] {
+        background-color: #ae8ff1;
+        color: #fcf8f8;
+        border-radius: 20%;
+        margin-bottom: 10px;
+        width: 60px;
+        border: 50px;
+        text-align: center;
+
     }
 
 }
