@@ -84,6 +84,34 @@
 
         </section>
 
+        <hr>
+
+        <div class="feedback">
+            <h1>Avalie este Local</h1>
+            <form id="avaliacao-form">
+                <label>Avaliação:</label>
+                <div class="estrelas">
+                    <span class="estrela" data-valor="1">★</span>
+                    <span class="estrela" data-valor="2">★</span>
+                    <span class="estrela" data-valor="3">★</span>
+                    <span class="estrela" data-valor="4">★</span>
+                    <span class="estrela" data-valor="5">★</span>
+                </div>
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+
+            <div id="feedback">
+                <h2>Avaliações de Usuários</h2>
+                <ul id="lista-avaliacoes"></ul>
+            </div>
+
+        </div>
+        <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo">↑</button>
+
     </main>
 
     <footer>

@@ -176,6 +176,26 @@ hr {
     margin-bottom: 150px;
 }
 
+#backToTopBtn {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixo no canto inferior direito */
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* Fica sobre outros elementos */
+    font-size: 18px;
+    background-color: #333333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem bordas */
+    padding: 15px;
+    border-radius: 10px; /* Borda arredondada */
+    cursor: pointer; /* Mãozinha no hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #b490ff; /* Cor quando o mouse passa em cima */
+  }
+
 @keyframes fade {
     from {
         opacity: .4
