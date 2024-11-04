@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ece5fd;
+}
+
+div.scroll-container {
+    background-color: #fefdff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Indicadores (bolinhas abaixo do carrossel) */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+header {
+    background-color: #B490FF;
+    color: #f7f2f2;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+
+}
+
+main {
+    /*texto1*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #0a0a0a;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-content {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+    width: 80%;
+    height: 50%;
+
+}
+
+.info-content {
+    width: 50%;
+
+}
+
+.info-content img {
+    width: 300px;
+    /* Largura do div */
+    height: 200px;
+    /* Altura do div */
+
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o div */
+    background-position: center;
+    /* Centraliza a imagem */
+}
+
+form h2 {
+    margin-top: 0;
+    color: #f3f3f7;
+    text-align: column;
+    width: max-content;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #8c71c9;
+    border-radius: 25px;
+
+}
+
+input[type="submit"] {
+    background-color: #ae8ff1;
+    color: #fcf8f8;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    width: 60px;
+    border: 50px;
+    text-align: center;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: start;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 8px;
+    margin-top: 10%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #B490FF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+
+    bottom: 0px;
+}
+
+h1 {
+    text-align: column;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 300px;
+    /* Flexível com largura mínima de 300px */
+}
+
+
+@media (max-width: 480px) {
+
+    .flex-content {
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .info-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+
+
+    }
+
+    .info-content h1 {
+        text-align: center;
+    }
+
+    .info-content img {
+        width: 80%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    input[type="submit"] {
+        background-color: #ae8ff1;
+        color: #fcf8f8;
+        border-radius: 20%;
+        margin-bottom: 10px;
+        width: 60px;
+        border: 50px;
+        text-align: center;
+
+    }
+
+}

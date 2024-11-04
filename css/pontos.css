@@ -1,0 +1,213 @@
+body {
+  background-color: #fdfaff;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.carrossel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2%;
+}
+
+a .sugestao {
+  border-radius: 10px;
+  height: 250px;
+  flex-direction: column;
+  display: flex;
+  margin-right: 10px;
+}
+
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.visitados {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100;
+}
+
+.circulo {
+  width: 400px;
+  /* Largura do círculo */
+  height: 400px;
+  /* Altura do círculo */
+  background-color: #EAE0FF;
+  /* Cor de fundo */
+  border-radius: 50%;
+  /* Deixa as bordas arredondadas formando um círculo */
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.descricao {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 200px;
+}
+
+.titulo-visitados {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 200px;
+}
+
+/*CARROSSEL*/
+
+.slideshow-container {
+  width: 60%;
+  position: relative;
+}
+
+
+/* Texto da legenda */
+.text {
+  color: #260e41;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(245, 242, 255);
+}
+
+
+/* Os pontos/bullets/indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #a8a8a8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #c090ff;
+}
+
+/* Animação de desvanecimento */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#backToTopBtn {
+  display: none; /* Oculto por padrão */
+  position: fixed; /* Fixo no canto inferior direito */
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; /* Fica sobre outros elementos */
+  font-size: 18px;
+  background-color: #333333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem bordas */
+  padding: 15px;
+  border-radius: 10px; /* Borda arredondada */
+  cursor: pointer; /* Mãozinha no hover */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#backToTopBtn:hover {
+  background-color: #b490ff; /* Cor quando o mouse passa em cima */
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Em telas menores, diminui o tamanho do texto */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+
+
+.legenda-foto {
+  margin-top: 20px;
+}
+
+.mySlides {
+  border-radius: 20px;
+}
+
+.titulo{
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  width: 30px;
+
+}
+
+a .sugestão {
+  height: 50px;
+}
+
+.visitados {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+}
