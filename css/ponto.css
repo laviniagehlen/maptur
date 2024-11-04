@@ -109,6 +109,93 @@ img {
     animation-duration: 1.5s;
 }
 
+/* Feedback */
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.estrelas {
+    display: inline-block;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.estrela.checked {
+    color: #FFD700; /* cor da estrela quando selecionada */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#feedback {
+    margin-top: 30px;
+}
+
+#lista-avaliacoes {
+    margin-bottom: 50px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    margin-bottom: 150px;
+}
+
+#backToTopBtn {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixo no canto inferior direito */
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* Fica sobre outros elementos */
+    font-size: 18px;
+    background-color: #333333; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem bordas */
+    padding: 15px;
+    border-radius: 10px; /* Borda arredondada */
+    cursor: pointer; /* Mãozinha no hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #b490ff; /* Cor quando o mouse passa em cima */
+  }
+
 @keyframes fade {
     from {
         opacity: .4
