@@ -4,14 +4,12 @@
     box-sizing: border-box;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 
 .cadastro {
     width: 60%;
@@ -24,8 +22,8 @@ body {
 }
 
 .cadastro-content {
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 90%;
     justify-content: center;
     background: rgb(244, 241, 241);
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
@@ -40,7 +38,7 @@ body {
 }
 
 .cadastro-content {
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 20;
     grid-area: title;
     text-align: center;
@@ -49,7 +47,7 @@ body {
 
 footer {
     width: 120%;
-    height: 30px;
+    height: 100px;
     justify-content: center;
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgba(135, 79, 255, 1) 100%);
 }
@@ -76,9 +74,12 @@ footer {
 }
 
 button {
-    padding: 0px 0px;
+    
+    padding: 0px 10px;
     background-color: #b98ff0d0;
     color: rgb(37, 37, 37);
+    width: 100px; 
+    height: 30px; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -89,6 +90,13 @@ button {
 .body {
     font-size: 16px;
 }
+
+img.icone {
+    width: 120%;
+    height: 30px;
+}
+
+
 
 /* Estilo para a régua horizontal */
 @media (max-width: 100px) {

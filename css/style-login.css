@@ -39,6 +39,9 @@ form {
     width: 100%;
     background-color: aliceblue;
     padding: 10%;
+   
+    position:relative;
+    left: -30px;
 }
 
 /* estilizando os imput */
