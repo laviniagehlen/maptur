@@ -176,6 +176,10 @@ hr {
     margin-bottom: 150px;
 }
 
+li {
+    margin: 30px;
+}
+
 #backToTopBtn {
     display: none; /* Oculto por padrão */
     position: fixed; /* Fixo no canto inferior direito */

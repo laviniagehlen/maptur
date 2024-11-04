@@ -35,9 +35,12 @@ a .sugestao {
 }
 
 .galeria {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
   justify-content: space-between;
   margin-top: 50px;
+  gap: 20px;
 }
 
 h3 {
@@ -52,8 +55,9 @@ h2 {
   justify-content: flex-end;
 }
 
-.visitados {
-  margin-bottom: 50px;
+.dicas {
+  margin-bottom: 60px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -82,7 +86,7 @@ h2 {
   margin-right: 200px;
 }
 
-.titulo-visitados {
+.titulo-dicas {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -166,7 +170,7 @@ h2 {
 }
 
 /* Em telas menores, diminui o tamanho do texto */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
 
   .prev,
   .next,
@@ -193,11 +197,13 @@ h2 {
 }
 
 .galeria {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  width: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 50px;
+  }
 
 }
 
@@ -209,5 +215,4 @@ a .sugestão {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
 }
