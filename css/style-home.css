@@ -1,12 +1,12 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0%;
     box-sizing: border-box;
-}
 
 body {
     width: 100%;
     height: 100%;
+
 }
 
 .primeira {
@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .primeira video{
@@ -44,7 +45,9 @@ body {
 .img-1 img {
     width: 100%;
     height: auto;
-    margin-top: 0%;
+    box-shadow: 0 4px 8px 0 rgba(221, 44, 177, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)}
+
+    
 }
 
 .text-1 {
@@ -53,46 +56,39 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    box-shadow: 0 10px 8px 0 rgba(62, 10, 75, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)}
 
-.img-2 {
+.img-1 {
     width: 30%;
-    height: 28vh;
-    border-radius: 10%;
-    background-color: rgb(255, 255, 255);
+    height: 40vh;
 }
 
-.img-2 img {
+.img-1 img {
     width: 100%;
     height: 100%;
-    margin-top: 10%;
+   
 }
 
-.text-2 {
+.text-1 {
     width: 40%;
     background-color: rgb(235, 235, 235);
     margin-top: 5%;
 }
 
-.img-3 {
+.img-1 {
     width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-3 img {
+.img-1 img {
     width: 100%;
     height: 100%;
-    margin-top: 10%;
+ 
 }
 
-.text-3 {
+.text-1 {
     width: 30%;
-    padding: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1%
 }
     
 
@@ -102,25 +98,26 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 120%;
     background-color: rgb(234, 199, 241);
     margin-bottom: 5%;
+    background-image: linear-gradient( to right, rgb(235, 196, 243), rgb(210, 136, 245), rgb(169, 90, 235), rgb(215, 84, 241) )
 }
 
 .missao {
-    height: 80px;
+    height: 90px;
     width: 90px;
 }
 
 .visao {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     list-style: none;
 }
 
 .valor {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
 }
 
 .card-img {
@@ -128,7 +125,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(156, 74, 233);
+    background-color: rgb(207, 171, 240);
     border-radius: 50%;
     padding: 2%;
 }
@@ -148,14 +145,14 @@ body {
 .sobre {
     justify-content: center;
     display: flex;
-    background-color: rgb(111, 0, 255);
+    background-color: rgb(143, 72, 184);
     height: 50vh;
     width: 50%;
-    border-radius: 9%;
+    border-radius: 2%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
-    margin-top: 40px;
+    margin-bottom: 0%;
+    margin-top: 80px;
 }
 .content{
     z-index: -2;
