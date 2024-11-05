@@ -5,8 +5,11 @@
 }
 
 body {
+  
+    font-family: Arial, sans-serif;
     background-color: #ece5fd;
 }
+
 
 div.scroll-container {
     background-color: #fefdff;
@@ -20,6 +23,17 @@ div.scroll-container {
 
 }
 
+.comment {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    text-align: column;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -31,10 +45,11 @@ div.scroll-container {
 }
 
 /* Indicadores (bolinhas abaixo do carrossel) */
-.dot-container {
-    text-align: center;
+.div-container {
+    text-align: column;
     padding: 10px;
     background: #ddd;
+
 }
 
 .dot {
@@ -83,20 +98,24 @@ main {
     display: flex;
     justify-content: space-around;
     border-radius: 50px;
-    width: 80%;
+    width: 50%;
     height: 50%;
+    position: relative;
+    top: -100px;
 
 }
 
+
 .info-content {
     width: 50%;
+
 
 }
 
 .info-content img {
     width: 300px;
     /* Largura do div */
-    height: 200px;
+    height: 300px;
     /* Altura do div */
 
     background-size: cover;
@@ -139,7 +158,10 @@ input[type="submit"] {
     margin-bottom: 10px;
     width: 60px;
     border: 50px;
-    text-align: center;
+    text-align: column;
+    position: relative;
+    top: 20px;
+
 }
 
 
@@ -187,13 +209,13 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-
     bottom: 0px;
 }
 
 h1 {
-    text-align: column;
-
+    text-align: left;
+    position: relative;
+    top: -100px;
 }
 
 .container {
@@ -228,8 +250,6 @@ h1 {
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;
-
-
     }
 
     .info-content h1 {
@@ -255,4 +275,13 @@ h1 {
 
     }
 
+    form h2 {
+        margin-top: 0px;
+        color: #f3f3f7;
+        text-align: column;
+        width: max-content;
+
+    }
+
+   
 }
