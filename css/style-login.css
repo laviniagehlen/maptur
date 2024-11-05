@@ -1,9 +1,14 @@
 body {
-    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Altura total da tela */
 }
+
+   
 
 .cadastro {
     width: 100%;
@@ -14,6 +19,18 @@ body {
     padding: 30px;
 
 }
+
+img{
+    
+    width: 100px;
+    height: auto;
+    float: right;
+     position: absolute;
+     
+}
+       
+
+
 
 .cadastro-content {
     width: 50%;
@@ -26,9 +43,10 @@ body {
 /* Inicio do form */
 
 .cadastro-form {
-    width: 30%;
-    padding: 7%;
+    width: 50%;
+    padding: 8%;
     justify-content: center;
+     
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
 }
 
@@ -37,12 +55,23 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(242, 243, 245);
     padding: 10%;
    
     position:relative;
     left: -30px;
 }
+
+.cadastrar {
+    width: 160%;
+    height: 60px;
+    margin-left: 90px; /* Move o texto 10px para a direita */
+    align-items: center;
+    font-family: Arial, sans-serif; 
+    font-size: 20px; /* Ajuste o tamanho da fonte */
+    color: #000000; /* Cor do texto */
+}
+
 
 /* estilizando os imput */
 
@@ -65,20 +94,25 @@ input[type=password] {
 
 button {
     padding: 0px 0px;
-    background-color: #1f1f1fd6;
+    background-color: #424141d6;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    width: 50%;
+    width: 30%;
+    height: 25px;  /* Define a altura do botão */
 }
 
 footer {
-    width: 110%;
-    height: 30%;
+    width: 135%;
+    padding: 80px 0;
+    margin: 0; /* Remove a margem */
+    display: flex; /* Flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 100%;
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
-   
+    
 }
 
 /* Muda os estilos dos botões de cancelar e inscrever-se em telas extra pequenas */
