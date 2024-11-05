@@ -7,26 +7,28 @@
     <title>Pontos Turísticos</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/pontos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <header>
+    <header >
         <div class="logo">
             <img src="../img/logo.png" alt="Logo">
         </div>
-        <nav>
+        <nav class="topnav" id="mytopnav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/pontosturisticos.html">Pontos Turísticos</a></li>
                 <li><a href="../pages/contato.html">Contato</a></li>
-                <li><a href="../pages/login.html">Login</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="menuhamburguer()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </ul>
         </nav>
 
         <div class="auth-buttons">
-            <a href="#" class="signup"><img class="app" src="../img/facebook.png" alt=""></a>
-            <a href="#" class="signup"><img class="app" src="../img/instagram.png" alt=""></a>
+            <a class="signup" href="../pages/login.html">Login</a>
         </div>
     </header>
     <h1 class="titulo">MapTur</h1>
@@ -159,8 +161,14 @@
         Siga-nos: @MapTur<br>
         © 2024 MapTur. Todos os direitos reservados.
 
+        <div class="auth-buttons">
+            <a href="#"><img class="app" src="../img/facebook.png" alt=""></a>
+            <a href="#"><img class="app" src="../img/instagram.png" alt=""></a>
+        </div>
+
     </footer>
     <script src="../js/pontos-script.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>
