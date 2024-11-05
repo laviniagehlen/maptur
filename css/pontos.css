@@ -82,8 +82,10 @@ h2 {
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  margin-left: 300px;
-  margin-right: 200px;
+  background-color: rgb(247, 234, 255);
+  border: 1.5px solid rgb(139, 110, 167);
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .titulo-dicas {
@@ -170,7 +172,7 @@ h2 {
 }
 
 /* Em telas menores, diminui o tamanho do texto */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
 
   .prev,
   .next,
@@ -196,13 +198,57 @@ h2 {
   font-size: 20px;
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .galeria {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-template-rows: auto;
-    justify-content: space-between;
     margin-top: 50px;
-    gap: 50px;
+  }
+
+  .dicas {
+    margin-bottom: 60px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .circulo {
+    height: 200px;
+    width: 200px;
+  }
+
+  .titulo-dicas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .descricao {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .dicas-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-bottom: 0%;
   }
 
 }
