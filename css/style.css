@@ -14,16 +14,6 @@ header {
     width: 100%;
     height: 80px;
 }
-
-.icon {
-    display: none;
-}
-
-
-.icon i {
-    font-size: 40px;
-    color: #000000;
-}
 .logo img {
     width: 80px;
 }
@@ -99,26 +89,3 @@ footer {
     color: white;
 }
 
-/* Em telas menores, diminui o tamanho do texto */
-@media only screen and (max-width: 480px) {
-
-    .topnav ul li a, .auth-buttons a {display: none;}
-
-    .logo img {
-        width: 20%;
-    }
-    
-    .icon {
-        display: block;
-        width: 80%;
-        height: 5vh;
-    }
-
-}
-
-/* adicionar a classe responsiva para o menu */
-@media only screen and (max-width: 480px) {
-
-
-
-}
