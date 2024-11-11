@@ -8,8 +8,6 @@ body {
     height: 100vh; /* Altura total da tela */
 }
 
-   
-
 .cadastro {
     width: 100%;
     height: 70vh;
@@ -20,21 +18,28 @@ body {
 
 }
 
+h2{
+   
+    font-family: 'Arial', sans-serif;  /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
+  font-size: 40px;  /* Tamanho da fonte */
+  line-height: 1.5;  /* Altura da linha */
+  color: #7b15f0;  /
+}
+
 img{
-    
+    position: absolute;
+    top: 0%;
+    left: 0;
     width: 100px;
     height: auto;
-    float: right;
-     position: absolute;
-     
+    display: flex;
+    float: right;   
 }
+
        
-
-
-
 .cadastro-content {
     width: 50%;
-    height: 70%;
+    height: 50%;
     text-align: center; 
     justify-content: center;
     font-size: 30px;
@@ -43,23 +48,28 @@ img{
 /* Inicio do form */
 
 .cadastro-form {
-    width: 50%;
-    padding: 8%;
+    
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    align-items: center;
+    width: 30%;
+    height: 20%;
+    padding: 5%;
     justify-content: center;
-     
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
 }
 
 form {
+    flex-direction: column;
+    position: absolute;
     justify-content: center;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgb(242, 243, 245);
+    width: 90%;
+    background-color: rgb(238, 238, 240);
     padding: 10%;
-   
     position:relative;
-    left: -30px;
+    left: -27px;
 }
 
 .cadastrar {
@@ -94,7 +104,8 @@ input[type=password] {
 
 button {
     padding: 0px 0px;
-    background-color: #424141d6;
+    top: 5%;
+    background-color: #131212d6;
     color: white;
     border: none;
     border-radius: 5px;
@@ -105,12 +116,11 @@ button {
 }
 
 footer {
-    width: 135%;
+    width: 175%;
     padding: 80px 0;
-    margin: 0; /* Remove a margem */
     display: flex; /* Flexbox para centralizar conteúdo */
     justify-content: center; /* Centraliza horizontalmente */
-    height: 100%;
+    height: 10px;
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
     
 }
