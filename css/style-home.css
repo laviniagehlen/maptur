@@ -246,7 +246,17 @@ body {
  .next,
  .text { 
     font-size: 11px;
+
  }
-    
+ .text-1 {
+    width: 20%;
+    height: 30%;
+    padding: 10%;
+    bottom: 200%;
+}
+.img-1 img {
+    width: 200%;
+    height: 60%;
  
+}
 }
