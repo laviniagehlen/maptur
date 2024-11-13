@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museu de Arte de São Paulo (MASP)</title>
+    <title>Shopping Morumbi</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/ponto.css">
 
@@ -18,12 +18,11 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Pontos Turísticos</a></li>
-                <li><a href="#">Mapa</a></li>
+                <li><a href="../pages/pontosturisticos.html">Pontos Turísticos</a></li>
                 <li><a href="../pages/contato.html">Contato</a></li>
             </ul>
-            <h1>MapTur</h1>
         </nav>
+
         <div class="auth-buttons">
             <a href="#" class="login"><img class="app" src="../img/facebook.png" alt=""></a>
             <a href="#" class="signup"><img class="app" src="../img/instagram.png" alt=""></a>
@@ -34,26 +33,26 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img class="foto-ponto" src="../img/teatro1.jpg" style="width:100%">
-                <div class="text">Museu de Arte de São Paulo (MASP)</div>
+                <img class="foto-ponto" src="../img/morumbi1.jpg" style="width:100%">
+                <div class="text">Shopping Morumbi</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="../img/teatro2.jpg" style="width:100%">
-                <div class="text">Museu de Arte de São Paulo (MASP)</div>
+                <img class="foto-ponto" src="../img/morumbi2.png" style="width:100%">
+                <div class="text">Shopping Morumbi</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="../img/teatro3.jpg" style="width:100%">
-                <div class="text">Museu de Arte de São Paulo (MASP)</div>
+                <img class="foto-ponto" src="../img/morumbi3.png" style="width:100%">
+                <div class="text">Shopping Morumbi</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="../img/teatro4.jpg" style="width:100%">
-                <div class="text">Museu de Arte de São Paulo (MASP)</div>
+                <img class="foto-ponto" src="../img/morumbi4.png" style="width:100%">
+                <div class="text">Shopping Morumbi</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -71,21 +70,49 @@
 
         </div>
         <br>
-        <p>O Museu de Arte de São Paulo (MASP), inaugurado em 1968, é um 
-            dos mais importantes museus de arte da América Latina. 
-            Localizado na Avenida Paulista, o MASP é conhecido por sua 
-            icônica estrutura de vidro e concreto, projetada pela arquiteta 
-            Lina Bo Bardi. O museu abriga uma vasta coleção de mais de 
-            8.000 obras, incluindo peças de artistas renomados como Van 
-            Gogh, Rembrandt e Picasso. Além das exposições permanentes, o 
-            MASP promove eventos culturais, exposições temporárias e 
-            atividades educacionais, consolidando-se como um importante c
-            entro de arte e cultura em São Paulo.</p>
+        <p>O Shopping Morumbi é um dos maiores e mais movimentados centros comerciais de São Paulo, localizado na Zona Sul da cidade, no bairro de Santo Amaro. Inaugurado em 1982, ele se destaca pela variedade de lojas, que vão de marcas populares a grifes de luxo, e pela grande oferta de serviços e entretenimento, o que atrai um público diversificado. Com mais de 480 lojas, o Shopping Morumbi é ideal para quem busca um mix completo de opções de compras e lazer.
+            O shopping possui uma ampla área de alimentação, com restaurantes, lanchonetes e cafés que atendem a diferentes gostos e orçamentos. Entre as comodidades estão cinemas de última geração, incluindo salas VIP e uma programação que traz os principais lançamentos. Além disso, o Shopping Morumbi frequentemente organiza eventos sazonais, como exposições e atividades interativas para crianças, tornando-o um local popular para famílias.
+            A segurança é um ponto forte, com monitoramento constante, vigilância, estacionamento amplo e bem organizado. Sua localização estratégica perto de grandes avenidas e da estação Morumbi da CPTM oferece fácil acesso para quem vem de diferentes partes da cidade, tanto para compras quanto para lazer.</p>
 
 
         </section>
 
+        <hr>
+
+        <div class="feedback">
+            <h1>Avalie este Local</h1>
+            <form id="avaliacao-form">
+                <label>Avaliação:</label>
+                <div class="estrelas">
+                    <span class="estrela" data-valor="1">★</span>
+                    <span class="estrela" data-valor="2">★</span>
+                    <span class="estrela" data-valor="3">★</span>
+                    <span class="estrela" data-valor="4">★</span>
+                    <span class="estrela" data-valor="5">★</span>
+                </div>
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+
+            <div id="feedback">
+                <h2>Avaliações de Usuários</h2>
+                <ul id="lista-avaliacoes"></ul>
+            </div>
+
+        </div>
+        <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo">↑</button>
+
     </main>
+
+    <footer>
+        Fale Conosco: maptur@gmail.com | (11) 1234-5678<br>
+        Siga-nos: @MapTur<br>
+        © 2024 MapTur. Todos os direitos reservados.
+
+    </footer>
 
     <script src="../js/ponto-script.js"></script>
 </body>

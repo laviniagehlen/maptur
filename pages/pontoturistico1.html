@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parque Ibirapuera</title>
+    <title>Pinacoteca de São Paulo</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/ponto.css">
 
@@ -18,15 +18,19 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Pontos Turísticos</a></li>
-                <li><a href="#">Mapa</a></li>
+                <li><a href="../pages/pontosturisticos.html">Pontos Turísticos</a></li>
                 <li><a href="../pages/contato.html">Contato</a></li>
             </ul>
-            <h1>MapTur</h1>
         </nav>
+
         <div class="auth-buttons">
-            <a href="#" class="login"><img class="app" src="../img/facebook.png" alt=""></a>
-            <a href="#" class="signup"><img class="app" src="../img/instagram.png" alt=""></a>
+            <a class="signup" href="../pages/login.html">Login</a>
+        </div>
+        <!-- Botão hamburguinho -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
     <main>
@@ -34,26 +38,26 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img class="foto-ponto" src="../img/parque-ibirapuera4.jpg" style="width:100%">
-                <div class="text">Parque Ibirapuera</div>
+                <img class="foto-ponto" src="../img/pinacoteca1.png" style="width:100%">
+                <div class="text">Pinacoteca de São Paulo</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="../img/parque-ibirapuera1 (1).jpg" style="width:100%">
-                <div class="text">Parque Ibirapuera</div>
+                <img class="foto-ponto" src="../img/pinacoteca2.png" style="width:100%">
+                <div class="text">Pinacoteca de São Paulo</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="../img/parque-ibirapuera2.jpg" style="width:100%">
-                <div class="text">Parque Ibirapuera</div>
+                <img class="foto-ponto" src="../img/pinacoteca3.png" style="width:100%">
+                <div class="text">Pinacoteca de São Paulo</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="../img/parque-Ibirapuera3.jpg" style="width:100%">
-                <div class="text">Parque Ibirapuera</div>
+                <img class="foto-ponto" src="../img/pinacoteca4.jpg" style="width:100%">
+                <div class="text">Pinacoteca de São Paulo</div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -71,22 +75,73 @@
 
         </div>
         <br>
-        <p>O Parque Ibirapuera é um dos maiores e mais conhecidos espaços 
-            verdes de São Paulo, atraindo milhões de visitantes anualmente. 
-            Inaugurado em 1954, o parque foi projetado pelo renomado 
-            arquiteto Oscar Niemeyer e pelo paisagista Roberto Burle 
-            Marx, combinando arquitetura moderna com vastas áreas de 
-            vegetação. Ele oferece um espaço de lazer completo, com lagos, 
-            pistas para caminhada e ciclismo, áreas para piquenique, além 
-            de museus e auditórios. O parque também abriga o Pavilhão da 
-            Bienal, um espaço de destaque para exposições de arte e eventos 
-            culturais. O Ibirapuera é um verdadeiro refúgio urbano, 
-            promovendo bem-estar e conexão com a natureza no coração da cidade.</p>
+        <p class="descricao">A Pinacoteca de São Paulo, fundada em 1905, é o museu 
+            de arte mais antigo de São Paulo e um dos mais importantes 
+            do Brasil. Localizada no edifício que antes abrigava o Liceu 
+            de Artes e Ofícios, no bairro da Luz, o prédio da Pinacoteca 
+            foi reformado pelo arquiteto Paulo Mendes da Rocha, que trouxe 
+            uma combinação moderna e preservada da arquitetura neoclássica 
+            original. O museu é conhecido por seu vasto acervo de arte 
+            brasileira, com mais de 10 mil obras que incluem pinturas, 
+            esculturas, gravuras, fotografias e instalações. A coleção da 
+            Pinacoteca abrange produções de grandes nomes da arte brasileira, 
+            como Portinari, Di Cavalcanti, Tarsila do Amaral, Anita Malfatti 
+            e Victor Meirelles, além de exposições temporárias de artistas 
+            contemporâneos. O museu também dedica espaços para oficinas, 
+            cursos, e atividades educativas para todas as idades, promovendo 
+            o acesso à cultura e à história da arte brasileira. A Pinacoteca 
+            é um dos pontos culturais mais visitados de São Paulo e é 
+            altamente recomendada para quem quer explorar a história e 
+            a evolução da arte no Brasil em um ambiente seguro e bem estruturado. 
+            Além disso, a Pinacoteca conta com o Parque da Luz, um belo jardim 
+            ao redor do museu, onde os visitantes podem caminhar e apreciar 
+            esculturas ao ar livre. A Pinacoteca também possui um segundo 
+            edifício, o Estação Pinacoteca, que abriga exposições 
+            temporárias e o Memorial da Resistência, um espaço dedicado à m
+            emória das vítimas da ditadura militar no Brasil.</p>
 
 
         </section>
 
+        <hr>
+
+        <div class="feedback">
+            <h1>Avalie este Local</h1>
+            <form id="avaliacao-form">
+                <label>Avaliação:</label>
+                <div class="estrelas">
+                    <span class="estrela" data-valor="1">★</span>
+                    <span class="estrela" data-valor="2">★</span>
+                    <span class="estrela" data-valor="3">★</span>
+                    <span class="estrela" data-valor="4">★</span>
+                    <span class="estrela" data-valor="5">★</span>
+                </div>
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+
+            <div id="feedback">
+                <h2>Avaliações de Usuários</h2>
+                <ul id="lista-avaliacoes"></ul>
+            </div>
+
+        </div>
+        <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo">↑</button>
     </main>
+    <footer>
+        Fale Conosco: maptur@gmail.com | (11) 1234-5678<br>
+        Siga-nos: @MapTur<br>
+        © 2024 MapTur. Todos os direitos reservados.
+
+        <div class="auth-buttons">
+            <a href="#"><img class="app" src="../img/facebook.png" alt=""></a>
+            <a href="#"><img class="app" src="../img/instagram.png" alt=""></a>
+        </div>
+
+    </footer>
 
     <script src="../js/ponto-script.js"></script>
 </body>

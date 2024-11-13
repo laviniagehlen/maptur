@@ -1,12 +1,12 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0%;
     box-sizing: border-box;
-}
 
 body {
     width: 100%;
     height: 100%;
+    background-color:rgb(255, 240, 255)
 }
 
 .primeira {
@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .primeira video{
@@ -36,7 +37,7 @@ body {
 }
 
 .img-1 {
-    width: 30%;
+    width: 40%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
 }
@@ -44,6 +45,9 @@ body {
 .img-1 img {
     width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(221, 44, 177, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)}
+
+    
 }
 
 .text-1 {
@@ -52,47 +56,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    box-shadow: 0 10px 8px 0 rgba(62, 10, 75, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)}
 
-.img-2 {
+.img-1 {
     width: 30%;
-    height: 28vh;
-    border-radius: 10%;
-    background-color: rgb(255, 255, 255);
+    height: 40vh;
 }
 
-.img-2 img {
+.img-1 img {
     width: 100%;
     height: 100%;
-    margin-top: 10%;
+   
 }
 
-.text-2 {
+.text-1 {
     width: 40%;
-    background-color: rgb(42, 61, 165);
+    background-color: rgb(235, 235, 235);
     margin-top: 5%;
 }
 
-.img-3 {
-    width: 35%;
-    height: 30vh;
-    background-color: rgb(255, 255, 255);
-    margin-top: 10%;
-}
-
-.img-3 img {
-    width: 110%;
-    height: 100%;
-    margin-top: 10%;
-}
-
-.text-3 {
+.img-1 {
     width: 40%;
-    height: 30vh;
-    background-color: rgb(111, 0, 255);
-    margin-top: 17%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.img-1 img {
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.text-1 {
+    width: 30%;
+    padding: 1%
+}
+    
 
 /*img-banner2*/
 .img-banner2 {
@@ -100,61 +98,165 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
-    background-color: rgb(196, 182, 182);
+    padding: 20px;
     margin-bottom: 5%;
+    background-color: rgb(234, 199, 241);
+    background-image: linear-gradient( to right, rgb(235, 196, 243), rgb(210, 136, 245), rgb(169, 90, 235), rgb(215, 84, 241) )
 }
 
-.missao {
-    height: 90px;
-    width: 90px;
-}
-
-.visao {
-    height: 90px;
-    width: 80px;
-    list-style: none;
-}
-
-.valor {
-    height: 90px;
-    width: 80px;
-}
-
+/* Container do card - será o responsável por controlar a perspectiva da rotação 3D */
 .card-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
-    border-radius: 50%;
+    background-color: rgb(185, 118, 255);
+    border-radius: 10px; /* Bordas arredondadas para o efeito */
     padding: 2%;
+    position: relative;
+    width: 200px; /* Definindo largura fixa */
+    height: 200px; /* Definindo altura fixa */
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d; /* Permite a rotação em 3D */
+    transition: transform 0.6s; /* Adiciona uma transição suave ao virar */
+    perspective: 1000px; /* Cria a percepção de profundidade */
 }
 
+/* Quando passar o mouse, o card vira 180 graus */
+.card-img:hover {
+    transform: rotateY(180deg); /* Aplica a rotação de 180 graus no eixo Y */
+}
 
-
-
-
-
-.segundo {
-    margin-top: 190px;
-    height: 20vh;
+/* Estilo da frente do card (imagem) */
+.card-img .front {
+    text-align: center;
+    position: absolute;
     width: 100%;
-
+    height: 100%;
+    backface-visibility: hidden; /* Garante que a parte de trás do card não seja visível quando virar */
 }
 
-.sobre {
-    justify-content: center;
+.card-img .front img {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo de trás do card (texto) */
+.card-img .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para o texto */
+    color: white;
     display: flex;
-    background-color: rgb(111, 0, 255);
-    height: 50vh;
-    width: 50%;
-    border-radius: 9%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; 
+    backface-visibility: hidden; /* Esconde a parte da frente ao virar */
+    transform: rotateY(180deg); /* Coloca a parte de trás virada para trás inicialmente */
 }
-.content{
-    z-index: -2;
+
+.texto-sla {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Quando o mouse passa sobre o card, o texto aparece */
+.card-img:hover .texto-sla {
+    opacity: 1;
+}
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    margin-bottom: 5%;
+}
+.sobre h1{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    font-size: 50px;
+}
+.img-sobre1{
+    position: absolute;
+    background-color: darkgrey;
+    background-image: url("g");
+    width: 40%;
+    height: 100%;
+    z-index: -1;
+    bottom: 10%;
+    border-radius: 5%;
+}
+
+.txt-sobre {
+    position: absolute;
+    left: 15%;
+    bottom: 30%;
+    width: 20%;
+    background-color: rgba(159, 94, 230, 0.6); /* Cor #9f5ee6 com 50% de transparência */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombras suaves para dar destaque */
+    margin: 20px; /* Margem ao redor */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.txt-sobre div {
+    padding: 5px;  /* Espaçamento interno */
+    background-color: rgba(159, 94, 230, 0.6); /* Fundo transparente com cor #9f5ee6 e 50% de opacidade */
+}
+
+.txt-sobre p {
+    color: black;  /* Cor do texto, pode ser qualquer cor que você preferir */
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.img-sobre2{
+    width: 20%;
+    position: absolute;
+    right: 20%;
+}
+
+.img-sobre2 img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.img-sobre3{
+    width: 17%;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+
+.img-sobre3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 480px) {
+ .prev,
+ .next,
+ .text { 
+    font-size: 11px;
+
+ }
+ .text-1 {
+    width: 20%;
+    height: 30%;
+    padding: 10%;
+    bottom: 200%;
+}
+.img-1 img {
+    width: 200%;
+    height: 60%;
+ 
+}
 }
