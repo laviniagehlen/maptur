@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: -0;
+    padding: -0;
     display: flex; /* Usando flexbox para centralizar o conteúdo */
     flex-direction: column;
     justify-content: center;
@@ -17,20 +17,34 @@ body {
     padding: 30px;
 
 }
+.container{
+    width: 10%;  /* Largura 10% da tela */
+}
 
-h2{
-   
+h1 {
+    top: 290px;
+    position: static; /* Ou relative, se necessário */
+    text-align: left;  /* Alinha o texto do h2 para a esquerda */
+    margin-left: -1000px;
+    margin-top: 50px;
+    padding-left: 0;
+   position: relative;
     font-family: 'Arial', sans-serif;  /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
-  font-size: 40px;  /* Tamanho da fonte */
-  line-height: 1.5;  /* Altura da linha */
+  font-size: 70px;  /* Tamanho da fonte */
   color: #7b15f0;  /
 }
 
+
+   
+    
+
 img{
+    margin-top: 10px;
+    margin-left: 20px;
     position: absolute;
-    top: 0%;
+    top: 2%;
     left: 0;
-    width: 100px;
+    width: 90px;
     height: auto;
     display: flex;
     float: right;   
@@ -48,16 +62,18 @@ img{
 /* Inicio do form */
 
 .cadastro-form {
-    
+  
+    margin-top: -90px;
+    margin-left: -30px;
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 40%;
+    left: 40%;
     align-items: center;
-    width: 30%;
-    height: 20%;
+    width: 40%;
+    height: 50%;
     padding: 5%;
     justify-content: center;
-    background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
+    background: linear-gradient(0deg, rgb(250, 248, 248) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
 }
 
 form {
@@ -102,16 +118,18 @@ input[type=password] {
     align-items: center;
 }
 
+
+
 button {
     padding: 0px 0px;
     top: 5%;
-    background-color: #131212d6;
+    background-color: #333232d6;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
     font-size: 16px;
-    width: 30%;
+    width: 25%;
     height: 25px;  /* Define a altura do botão */
 }
 
@@ -120,7 +138,7 @@ footer {
     padding: 80px 0;
     display: flex; /* Flexbox para centralizar conteúdo */
     justify-content: center; /* Centraliza horizontalmente */
-    height: 10px;
+    height: -0px;
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
     
 }
