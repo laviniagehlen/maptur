@@ -24,7 +24,7 @@ const comments = document.querySelectorAll('.comment');
 comments.forEach((comment, index) => {
     console.log(`Comentário ${index + 1}:`, comment.textContent);
     // Exemplo: aplica uma cor de fundo a cada comentário
-    comment.style.backgroundColor = '#f5f5f5'
+    comment.style.backgroundColor = '#fff'
 });
 
 

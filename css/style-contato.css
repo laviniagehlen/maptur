@@ -5,14 +5,15 @@
 }
 
 body {
-  
+
     font-family: Arial, sans-serif;
-    background-color: #ece5fd;
+    background-color: #d5c2ff;
 }
 
 
+
 div.scroll-container {
-    background-color: #fefdff;
+    background-color: #fff;
     overflow: hidden;
     white-space: nowrap;
     padding: 10px;
@@ -20,6 +21,8 @@ div.scroll-container {
     align-items: center;
     font-size: 12;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px;
 
 }
 
@@ -29,10 +32,9 @@ div.scroll-container {
     margin: 10px;
     text-align: column;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px #874fff(0, 0, 0, 0.1);
 
 }
-
 
 .next {
     right: 0;
@@ -41,7 +43,7 @@ div.scroll-container {
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #9f5ee6(0, 0, 0, 0.8);
 }
 
 /* Indicadores (bolinhas abaixo do carrossel) */
@@ -57,7 +59,7 @@ div.scroll-container {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #874fff;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -65,11 +67,11 @@ div.scroll-container {
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: #9480a7;
 }
 
 header {
-    background-color: #B490FF;
+    background-color: #ffffff;
     color: #f7f2f2;
     padding: 10px;
     text-align: center;
@@ -88,7 +90,7 @@ main {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    color: #0a0a0a;
+    color: #ffffff;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -109,7 +111,6 @@ main {
 .info-content {
     width: 50%;
 
-
 }
 
 .info-content img {
@@ -126,8 +127,8 @@ main {
 
 form h2 {
     margin-top: 0;
-    color: #f3f3f7;
-    text-align: column;
+    color: #b976ff;
+
     width: max-content;
 
 }
@@ -144,24 +145,26 @@ input[type="email"],
 
 textarea {
     width: 80%;
+    height:30px;
     padding: 5px;
     margin-bottom: 5px;
-    border: 1px solid #8c71c9;
-    border-radius: 25px;
+    border: 1px solid #9f5ee6;
+    border-radius: 5px;
 
 }
 
-input[type="submit"] {
-    background-color: #ae8ff1;
-    color: #fcf8f8;
-    border-radius: 20%;
-    margin-bottom: 10px;
-    width: 60px;
-    border: 50px;
-    text-align: column;
-    position: relative;
-    top: 20px;
+/*botão enviar*/
 
+input[type="submit"] {
+    padding: 0px 0px;
+    background-color: #874fff;
+    color: #fcf8f8;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    height: 25px;
 }
 
 
@@ -176,21 +179,21 @@ input[type="submit"] {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #d4d3d4(0, 0, 0);
+    background-color: #edebf0(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #ffffff;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #d6d6d6;
     width: 30%;
     border-radius: 8px;
     margin-top: 10%;
 }
 
 .close {
-    color: #aaa;
+    color: #b976ff;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -198,25 +201,21 @@ input[type="submit"] {
 
 .close:hover,
 .close:focus {
-    color: rgb(8, 8, 8);
+    color: #9f5ee6(8, 8, 8);
     text-decoration: none;
     cursor: pointer;
 }
 
 footer {
-    background-color: #B490FF;
-    color: #fff;
+    background-color: #874fff;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     width: 100%;
     bottom: 0px;
 }
 
-h1 {
-    text-align: left;
-    position: relative;
-    top: -100px;
-}
+
 
 .container {
     display: flex;
@@ -227,6 +226,7 @@ h1 {
     flex: 1 1 300px;
     /* Flexível com largura mínima de 300px */
 }
+
 
 
 @media (max-width: 480px) {
@@ -265,13 +265,7 @@ h1 {
     }
 
     input[type="submit"] {
-        background-color: #ae8ff1;
-        color: #fcf8f8;
-        border-radius: 20%;
-        margin-bottom: 10px;
-        width: 60px;
-        border: 50px;
-        text-align: center;
+        margin-top: 20px;
 
     }
 
@@ -283,5 +277,6 @@ h1 {
 
     }
 
-   
+
+
 }
