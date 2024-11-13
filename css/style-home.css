@@ -110,7 +110,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(207, 171, 240);
+    background-color: rgb(185, 118, 255);
     border-radius: 10px; /* Bordas arredondadas para o efeito */
     padding: 2%;
     position: relative;
@@ -229,12 +229,24 @@ body {
 }
 
 .img-sobre3{
-    width: 15%;
+    width: 17%;
     position: absolute;
     bottom: 0;
+    height: auto;
 }
 
 .img-sobre3 img{
     width: 100%;
+    height: 100%;
     border-radius: 50%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 480px) {
+ .prev,
+ .next,
+ .text { 
+    font-size: 11px;
+ }
+    
+ 
 }
