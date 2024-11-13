@@ -209,6 +209,7 @@ h2 {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: auto;
     margin-top: 50px;
+    width: 100%; /* Força a largura total */
   }
 
   .dicas {
