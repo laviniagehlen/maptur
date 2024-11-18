@@ -1,16 +1,11 @@
-body {
-    margin: -0;
-    padding: -0;
-    display: flex; /* Usando flexbox para centralizar o conteúdo */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Altura total da tela */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .cadastro {
     width: 100%;
-    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,22 +29,6 @@ h1 {
   color: #7b15f0;  /
 }
 
-
-   
-    
-
-img{
-    margin-top: 10px;
-    margin-left: 20px;
-    position: absolute;
-    top: 2%;
-    left: 0;
-    width: 90px;
-    height: auto;
-    display: flex;
-    float: right;   
-}
-
        
 .cadastro-content {
     width: 50%;
@@ -59,43 +38,35 @@ img{
     font-size: 30px;
 }
 
-/* Inicio do form */
-
 .cadastro-form {
-  
-    margin-top: -90px;
-    margin-left: -30px;
-    position: absolute;
     top: 40%;
     left: 40%;
     align-items: center;
-    width: 40%;
-    height: 50%;
+    width: 40%;;
     padding: 5%;
     justify-content: center;
     background: linear-gradient(0deg, rgb(250, 248, 248) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
 }
 
+.cadastrar {
+    align-items: center;
+    margin-top: -50px;
+    font-size: 5px;  /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Tahoma', sans-serif;
+   font-weight: bold;
+    font-size: 20px; /* Ajuste o tamanho da fonte */
+    color: #0e0d0d; /* Cor do texto */
+}
+
+
 form {
     flex-direction: column;
-    position: absolute;
     justify-content: center;
     display: flex;
     width: 90%;
-    background-color: rgb(238, 238, 240);
+    background-color: rgb(255, 255, 255);
     padding: 10%;
-    position:relative;
-    left: -27px;
-}
-
-.cadastrar {
-    width: 160%;
-    height: 60px;
-    margin-left: 90px; /* Move o texto 10px para a direita */
-    align-items: center;
-    font-family: Arial, sans-serif; 
-    font-size: 20px; /* Ajuste o tamanho da fonte */
-    color: #000000; /* Cor do texto */
 }
 
 
@@ -107,7 +78,7 @@ input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #0c0c0c;
+    border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -118,36 +89,44 @@ input[type=password] {
     align-items: center;
 }
 
-
-
 button {
     padding: 0px 0px;
     top: 5%;
-    background-color: #333232d6;
+    background-color: #141414d6;
+    margin-top: 15px;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
     font-size: 16px;
-    width: 25%;
+    width: 55%;
     height: 25px;  /* Define a altura do botão */
 }
 
-footer {
-    width: 175%;
-    padding: 80px 0;
-    display: flex; /* Flexbox para centralizar conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    height: -0px;
-    background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
-    
+.signup-link{
+text-align: right;
+margin-top: 15%;
 }
 
-/* Muda os estilos dos botões de cancelar e inscrever-se em telas extra pequenas */
-@media screen and (max-width: 300px) {
 
-    .cancelbtn,
-    .signupbtn {
-        width: 100%;
+/* Estilo específico para o link "Cadastrar-se" */
+.btn-cadastrar {
+    font-size: 20px;
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    width: 60%; /* Garante que o contêiner ocupe toda a largura */
+    color: #8350e2; 
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    margin-left: 2px; /* Mover o texto um pouco para a direita, se necessário */
+}
+
+
+@media screen and (max-width: 480px) {
+    .cadastro{
+        flex-direction: column;
     }
+
+    .cadastro-form{
+        width: 90%;
+    }
+
 }
