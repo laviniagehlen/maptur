@@ -2,8 +2,13 @@ body {
   background-color: #fdfaff;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif
+.descricao-foto {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.legenda-foto {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 5px;
 }
 
 .carrossel {
@@ -35,9 +40,12 @@ a .sugestao {
 }
 
 .galeria {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
   justify-content: space-between;
   margin-top: 50px;
+  gap: 20px;
 }
 
 h3 {
@@ -52,8 +60,9 @@ h2 {
   justify-content: flex-end;
 }
 
-.visitados {
-  margin-bottom: 50px;
+.dicas {
+  margin-bottom: 60px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -78,17 +87,22 @@ h2 {
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  margin-left: 300px;
-  margin-right: 200px;
+  background-color: rgb(247, 234, 255);
+  border: 1.5px solid rgb(139, 110, 167);
+  margin-left: 20px;
+  margin-right: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.titulo-visitados {
+.titulo-dicas {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
   margin-left: 300px;
   margin-right: 200px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 19px;
 }
 
 /*CARROSSEL*/
@@ -101,14 +115,16 @@ h2 {
 
 /* Texto da legenda */
 .text {
-  color: #260e41;
+  color: #000000;
   font-size: 35px;
   padding: 8px 12px;
   position: absolute;
   top: 8px;
   width: 100%;
   text-align: center;
-  background-color: rgb(245, 242, 255);
+  background-color: #f5f2ff;
+  opacity: 0.8;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 
@@ -166,7 +182,7 @@ h2 {
 }
 
 /* Em telas menores, diminui o tamanho do texto */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 480px) {
 
   .prev,
   .next,
@@ -179,8 +195,9 @@ h2 {
   margin-top: 20px;
 }
 
-.mySlides {
-  border-radius: 20px;
+.slide {
+  border-radius: 5px;
+  width: 350px;
 }
 
 .titulo{
@@ -192,12 +209,66 @@ h2 {
   font-size: 20px;
 }
 
-.galeria {
+.card {
   display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  width: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10%;
+}
+
+.sugestao {
+  width: 100%;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    margin-top: 50px;
+    width: 100%; /* Força a largura total */
+  }
+
+  .dicas {
+    margin-bottom: 60px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .circulo {
+    height: 200px;
+    width: 200px;
+  }
+
+  .titulo-dicas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .descricao {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .dicas-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-bottom: 0%;
+
+  }
 
 }
 
@@ -209,5 +280,4 @@ a .sugestão {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
 }
