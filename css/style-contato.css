@@ -20,10 +20,9 @@ div.scroll-container {
     display: flex;
     align-items: center;
     font-size: 12;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-between;
-    box-shadow: 0px 0px 20px;
-
+    box-shadow: 0 4px 8px 0 rgba(254, 253, 255, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
 }
 
 .comment {
@@ -85,12 +84,12 @@ nav ul li {
 }
 
 main {
-    /*texto1*/
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    color: #ffffff;
+    color: #0e0d0d;
     padding: 10px;
     width: 100%;
     height: 100%;
@@ -111,6 +110,7 @@ main {
 .info-content {
     width: 50%;
 
+  
 }
 
 .info-content img {
@@ -121,13 +121,16 @@ main {
 
     background-size: cover;
     /* Ajusta a imagem para cobrir todo o div */
-    background-position: center;
+    position: relative;
+    top: 80;
     /* Centraliza a imagem */
+   
+    box-shadow: 0 4px 8px 0 rgba(156, 114, 199, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
 }
 
 form h2 {
     margin-top: 0;
-    color: #b976ff;
+    color: #121213;
 
     width: max-content;
 
@@ -137,7 +140,7 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 input[type="text"],
@@ -145,7 +148,7 @@ input[type="email"],
 
 textarea {
     width: 80%;
-    height:30px;
+    height: 30px;
     padding: 5px;
     margin-bottom: 5px;
     border: 1px solid #9f5ee6;
@@ -207,8 +210,8 @@ input[type="submit"] {
 }
 
 footer {
-    background-color: #874fff;
-    color: #ffffff;
+    background-color: #fff;
+    color: #754992;
     text-align: center;
     padding: 10px 0;
     width: 100%;
@@ -250,14 +253,14 @@ footer {
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;
+
     }
 
-    .info-content h1 {
-        text-align: center;
-    }
 
     .info-content img {
         width: 80%;
+
+
     }
 
     form {
@@ -266,7 +269,7 @@ footer {
 
     input[type="submit"] {
         margin-top: 20px;
-
+        flex-direction: column;
     }
 
     form h2 {

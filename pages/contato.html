@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    
     <header>
         <div class="logo">
             <img src="../img/logo.png" alt="Logo">
@@ -17,15 +18,19 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="pontosturisticos.html">Pontos Turísticos</a></li>
-
+                <li><a href="../pages/pontosturisticos.html">Pontos Turísticos</a></li>
                 <li><a href="../pages/contato.html">Contato</a></li>
             </ul>
         </nav>
 
         <div class="auth-buttons">
-            <a href="#" class="login"><img class="app" src="../img/facebook.png" alt=""></a>
-            <a href="#" class="signup"><img class="app" src="../img/instagram.png" alt=""></a>
+            <a class="signup" href="../pages/login.html">Login</a>
+        </div>
+        <!-- Botão hamburguinho -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
     <div class="scroll-container" id="scrollContainer">
@@ -121,7 +126,7 @@
     </div>
 
     <script src="../js/script.js"></script>
-
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>
