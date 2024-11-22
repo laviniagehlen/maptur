@@ -12,29 +12,22 @@
     padding: 30px;
 
 }
-.container{
-    width: 10%;  /* Largura 10% da tela */
-}
 
 h1 {
-    top: 290px;
-    position: static; /* Ou relative, se necessário */
-    text-align: left;  /* Alinha o texto do h2 para a esquerda */
-    margin-left: -1000px;
-    margin-top: 50px;
-    padding-left: 0;
-   position: relative;
-    font-family: 'Arial', sans-serif;  /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
-  font-size: 70px;  /* Tamanho da fonte */
-  color: #7b15f0;  /
+    font-family: 'Arial', sans-serif;
+    /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
+    font-size: 70px;
+    /* Tamanho da fonte */
+    color: #7b15f0;
+
 }
 
-       
+
 
 .cadastro-content {
     width: 50%;
     height: 50%;
-    text-align: center; 
+    text-align: center;
     justify-content: center;
     font-size: 30px;
 }
@@ -43,7 +36,8 @@ h1 {
     top: 40%;
     left: 40%;
     align-items: center;
-    width: 40%;;
+    width: 40%;
+    ;
     padding: 5%;
     border-radius: 5px;
     justify-content: center;
@@ -54,20 +48,24 @@ h1 {
     align-items: center;
     margin-top: -30px;
 
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
     font-family: 'Tahoma', sans-serif;
-   font-weight: bold;
-    font-size: 28px; /* Ajuste o tamanho da fonte */
-    color: #000000; /* Cor do texto */
+    font-weight: bold;
+    font-size: 28px;
+    /* Ajuste o tamanho da fonte */
+    color: #000000;
+    /* Cor do texto */
 }
 
 
 form {
     flex-direction: column;
-    justify-content: flex-start;  /* Alinha o formulário branco à esquerda */
-    margin-left: 10px;      
+    justify-content: flex-start;
+    /* Alinha o formulário branco à esquerda */
+    margin-left: 10px;
     display: flex;
-     border-radius: 5px;
+    border-radius: 5px;
     width: 90%;
     top: -30px;
     background-color: rgb(255, 255, 255);
@@ -88,7 +86,7 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-.btn-div{
+.btn-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,51 +103,50 @@ button {
     cursor: pointer;
     font-size: 16px;
     width: 35%;
-    height: 25px;  /* Define a altura do botão */
+    height: 25px;
+    /* Define a altura do botão */
 }
 
-.signup-link{
-text-align: right;
-margin-top: 15%;
+.signup-link {
+    text-align: right;
+    margin-top: 15%;
 }
 
 
 /* Estilo específico para o link "Cadastrar-se" */
 .btn-cadastrar {
     font-size: 20px;
-    text-align: left; /* Alinha o conteúdo à esquerda */
-    width: 60%; /* Garante que o contêiner ocupe toda a largura */
-    color: #8350e2; 
-    justify-content: flex-end; /* Alinha o conteúdo à direita */
-    margin-left: 2px; /* Mover o texto um pouco para a direita, se necessário */
+    text-align: left;
+    /* Alinha o conteúdo à esquerda */
+    width: 60%;
+    /* Garante que o contêiner ocupe toda a largura */
+    color: #8350e2;
+    justify-content: flex-end;
+    /* Alinha o conteúdo à direita */
+    margin-left: 2px;
+    /* Mover o texto um pouco para a direita, se necessário */
 }
 
 
 @media screen and (max-width: 768px) {
-    .cadastro{
+    .cadastro {
+        width: 100%;
         flex-direction: column;
     }
 
     .form-container {
-        width: 900%; /* Ajusta a largura para 90% da tela */
-        padding: 15px; /* Menos padding para telas pequenas */
-      }
-    
-    h1 {
-        top: 10px;
-        position: static; /* Ou relative, se necessário */
-        text-align: left;  /* Alinha o texto do h2 para a esquerda */
-    margin-right: -1000px;
-        margin-top: 50px;
-        padding-left: 50;
-       position: relative;
-        font-family: 'Arial', sans-serif;  /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
-      font-size: 30px;  /* Tamanho da fonte */
-      color: #7b15f0;  /
+        width: 900%;
+        /* Ajusta a largura para 90% da tela */
+        padding: 15px;
+        /* Menos padding para telas pequenas */
     }
-    
-    .cadastro-form{
+
+    .cadastro-form {
         width: 90%;
     }
+    .logo img{
+        width: 25% !important;
+    }
+    
 
 }

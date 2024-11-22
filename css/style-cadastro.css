@@ -44,12 +44,12 @@ body {
 }
 
 .h1 {
-   
+
     font-size: 15px;
     padding-top: 20;
     grid-area: title;
     text-align: center;
-  
+
 
 }
 
@@ -141,8 +141,6 @@ button {
 }
 
 
-
-
 img.icone {
     width: 35%;
     height: 25px;
@@ -153,20 +151,34 @@ img.icone {
 /* Estilo para a régua horizontal */
 @media (max-width: 768px) {
 
+    .cadastro {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
     .cadastro-content {
-        width: 80%; /* Ajusta a largura para 80% da tela em celulares */
-        padding: 15px; /* Menos padding para telas pequenas */
-      }
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        /* Ajusta a largura para 80% da tela em celulares */
+    }
 
-    .fcadastro-content {
-        width: 90%; /* Ajusta a largura para 90% da tela */
-        padding: 10px; /* Menos padding para telas pequenas */
-      }
-    /* ajustes adicionais */
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
 
-}
+    h1 {
+        font-size: 40px !important;
+    }
+    .logo img{
+        width: 25% !important;
+    }
 
-img {
-    max-width: 80px;
-    height: 80px;
+
 }
