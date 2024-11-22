@@ -5,12 +5,13 @@
 }
 
 body {
-
+    /* Este é o fundo do nosso desenho. Escolhemos a fonte (como a letra em um caderno) e pintamos o fundo de lilás claro! */
     font-family: Arial, sans-serif;
     background-color: #d5c2ff;
 }
 
 
+/* Este é o carrossel da página */
 
 div.scroll-container {
     background-color: #fff;
@@ -25,6 +26,7 @@ div.scroll-container {
     box-shadow: 0 4px 8px 0 rgba(254, 253, 255, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
 }
 
+/*comentários do carrossel*/
 .comment {
     width: auto;
     height: auto;
@@ -35,11 +37,13 @@ div.scroll-container {
 
 }
 
+/* Isso é um botão para ir para o próximo. */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+/* Quando passamos o mouse, o botão muda de cor! */
 .prev:hover,
 .next:hover {
     background-color: #9f5ee6(0, 0, 0, 0.8);
@@ -53,6 +57,7 @@ div.scroll-container {
 
 }
 
+/* Cada bolinha do carrossel. */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -64,19 +69,23 @@ div.scroll-container {
     transition: background-color 0.6s ease;
 }
 
+/* A bolinha muda de cor quando clicamos ou passamos o mouse. */
 .active,
 .dot:hover {
     background-color: #9480a7;
 }
 
+/* Aqui é o topo da página, onde ficam coisas como o título. */
 header {
     background-color: #ffffff;
     color: #f7f2f2;
     padding: 10px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
+/* Links do menu. */
 nav ul li {
     display: inline;
     margin-right: 10px;
@@ -95,45 +104,37 @@ main {
     height: 100%;
 }
 
+/* Um quadrado centralizado, bem bonito. */
 .flex-content {
     display: flex;
-    justify-content: space-around;
-    border-radius: 50px;
-    width: 50%;
-    height: 50%;
-    position: relative;
-    top: -100px;
-
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #ccc;
+    /* Apenas para visualização */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #d8bfe5, #a78ac8);
+    border-radius: 5px;
 }
 
 
 .info-content {
-    width: 50%;
-
-  
+    max-height: 10%;
 }
 
 .info-content img {
-    width: 300px;
-    /* Largura do div */
-    height: 300px;
-    /* Altura do div */
-
-    background-size: cover;
-    /* Ajusta a imagem para cobrir todo o div */
+    max-width: 250px;
+    max-height: 300px;
     position: relative;
-    top: 80;
-    /* Centraliza a imagem */
-   
-    box-shadow: 0 4px 8px 0 rgba(156, 114, 199, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
+    top: -110;
+    box-shadow: 0 4px 8px 0 rgba(224, 222, 226, 0.822), 0 6px 20px 0 rgba(226, 225, 228, 0.19)
 }
 
 form h2 {
     margin-top: 0;
     color: #121213;
-
     width: max-content;
-
 }
 
 label {
@@ -145,7 +146,6 @@ label {
 
 input[type="text"],
 input[type="email"],
-
 textarea {
     width: 80%;
     height: 30px;
@@ -168,9 +168,12 @@ input[type="submit"] {
     font-size: 16px;
     width: 30%;
     height: 25px;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;
 }
 
-
+/*alerta de preenchimento*/
 .modal {
     display: none;
     position: fixed;
@@ -186,6 +189,7 @@ input[type="submit"] {
     background-color: #edebf0(0, 0, 0, 0.4);
 }
 
+/* Esta é a caixinha dentro da janelinha mágica. */
 .modal-content {
     background-color: #ffffff;
     padding: 20px;
@@ -195,6 +199,7 @@ input[type="submit"] {
     margin-top: 10%;
 }
 
+/* Esse é o botão de fechar, aquele "X" no canto. */
 .close {
     color: #b976ff;
     float: right;
@@ -202,6 +207,7 @@ input[type="submit"] {
     font-weight: bold;
 }
 
+/* Quando passamos o mouse em cima ou clicamos, ele muda de cor! */
 .close:hover,
 .close:focus {
     color: #9f5ee6(8, 8, 8);
@@ -237,7 +243,7 @@ footer {
     .flex-content {
         flex-direction: column;
         width: 100%;
-        height: 50%;
+        height: 100%;
         justify-content: center;
         align-items: center;
     }
@@ -259,12 +265,14 @@ footer {
 
     .info-content img {
         width: 80%;
-
-
+        top: 5px;
+        height: 250px;
     }
 
     form {
         width: 80%;
+        position: columns;
+
     }
 
     input[type="submit"] {
@@ -280,6 +288,8 @@ footer {
 
     }
 
-
+    footer {
+        position: fixed;
+    }
 
 }
