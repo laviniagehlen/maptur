@@ -78,7 +78,7 @@ div.scroll-container {
 main {
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-family: Arial, sans-serif;
     color: #0e0d0d;
