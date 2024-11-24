@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
+}
 
 .cadastro {
     width: 60%;
@@ -23,12 +22,17 @@ body {
 
 }
 
+
 .cadastro-content {
-    width: 50%;
-    height: 50%;
+
+    width: 97%;
+    height: 96%;
+    margin-right: 2px;
+    border-radius: 5px;
     justify-content: center;
-    background: rgb(244, 241, 241);
-    background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(180, 144, 255, 1) 54%, rgb(151, 105, 250) 100%);
+    position: relative;
+    left: -10%;
 }
 
 
@@ -39,17 +43,36 @@ body {
     flex-direction: column;
 }
 
-.cadastro-content {
-    font-size: 20px;
+.h1 {
+
+    font-size: 15px;
     padding-top: 20;
     grid-area: title;
     text-align: center;
 
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 140px;
+}
+
+.cadastrar {
+    width: 90%;
+    height: 60px;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    font-size: 20px;
+    /* Ajuste o tamanho da fonte */
+    color: #0a0a0a;
+    /* Cor do texto */
 }
 
 footer {
-    width: 120%;
-    height: 30px;
+    width: 90px;
+    height: 80px;
     justify-content: center;
     background: linear-gradient(0deg, rgb(245, 241, 241) 0%, rgba(180, 144, 255, 1) 54%, rgba(135, 79, 255, 1) 100%);
 }
@@ -61,48 +84,101 @@ footer {
 
 .input-icone input {
     padding-left: 30px;
-    height: 3vh;
+
 }
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    /* Deixa o campo ocupar a largura total do formulário */
+    height: 45px;
+    /* Aumenta a altura dos campos */
+    font-size: 18px;
+    /* Aumenta o tamanho da fonte */
+    padding: 10px 10px 10px 40px;
+    /* Espaço para o ícone */
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Inclui padding na largura */
+}
+
+
+
 
 .input-icone i {
     position: absolute;
-    left: 10px;
+    ;
+    vertical-align: middle;
+    /* Garante que o ícone fique alinhado com o texto */
+    position: absolute;
+    left: 5px;
+    font-size: 25px;
     /* Posição do ícone */
     top: 50%;
     transform: translateY(-50%);
     /* Centraliza verticalmente */
-    color: #777676;
+    color: #4b4949;
     /* Cor do ícone */
 }
 
 button {
+    margin: 0 auto;
     padding: 0px 0px;
-    background-color: #b98ff0d0;
-    color: rgb(37, 37, 37);
+    background-color: #1a191bd0;
+    color: rgb(238, 232, 232);
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+    /* Adiciona um espaço acima do botão */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
-/* Conteúdo/Caixa do Modal */
-.body {
-    font-size: 16px;
+
+img.icone {
+    width: 35%;
+    height: 25px;
 }
+
+
 
 /* Estilo para a régua horizontal */
-@media (max-width: 100px) {
+@media (max-width: 768px) {
 
-    body {
-        font-size: 10px;
-
+    .cadastro {
+        flex-direction: column;
+        width: 100%;
     }
 
-    /* ajustes adicionais */
 
-}
+    .cadastro-content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        /* Ajusta a largura para 80% da tela em celulares */
+    }
 
-img {
-    max-width: 70px;
-    height: 50px;
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px !important;
+    }
+    .logo img{
+        width: 25% !important;
+    }
+
+
 }
