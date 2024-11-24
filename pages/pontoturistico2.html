@@ -7,6 +7,7 @@
     <title>Roda Rico</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/ponto.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
 
 </head>
 
@@ -18,15 +19,19 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Pontos Turísticos</a></li>
-                <li><a href="#">Mapa</a></li>
+                <li><a href="../pages/pontosturisticos.html">Pontos Turísticos</a></li>
                 <li><a href="../pages/contato.html">Contato</a></li>
             </ul>
-            <h1>MapTur</h1>
         </nav>
+
         <div class="auth-buttons">
-            <a href="#" class="login"><img class="app" src="../img/facebook.png" alt=""></a>
-            <a href="#" class="signup"><img class="app" src="../img/instagram.png" alt=""></a>
+            <a class="signup" href="../pages/login.html">Login</a>
+        </div>
+        <!-- Botão hamburguinho -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
     <main>
@@ -40,19 +45,19 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="../img/roda-rico2.png" style="width:100%">
+                <img class="foto-ponto" src="../img/roda-rico2.png" style="width:100%">
                 <div class="text">Roda Rico</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="../img/roda-rico3.jpg" style="width:100%">
+                <img class="foto-ponto" src="../img/roda-rico3.jpg" style="width:100%">
                 <div class="text">Roda Rico</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="../img/roda-rico4.jpg" style="width:100%">
+                <img class="foto-ponto" src="../img/roda-rico4.jpg" style="width:100%">
                 <div class="text">Roda Rico</div>
             </div>
 
@@ -71,21 +76,52 @@
 
         </div>
         <br>
-        <p>A Roda Rico é uma roda-gigante de 91 metros de altura, a maior 
-            da América Latina, localizada no Parque Cândido Portinari, em 
-            São Paulo. Inaugurada em 2022, ela oferece vistas panorâmicas 
-            da cidade, incluindo o Rio Pinheiros e o skyline de São Paulo.
-             O passeio dura de 20 a 30 minutos em 42 cabines climatizadas, 
-             que acomodam até 8 pessoas cada. Além das belas vistas, 
-             a área ao redor oferece opções de lazer e entretenimento, 
-             sendo um local popular para turistas e famílias.</p>
+        <p class="descricao">A Roda Rico é uma das maiores rodas-gigantes da América Latina e um dos novos cartões-postais de São Paulo. Localizada no Parque Cândido Portinari, ao lado do Parque Villa-Lobos, na Zona Oeste da cidade, a atração foi inaugurada em dezembro de 2022 e oferece uma vista panorâmica impressionante da capital paulista, alcançando até 91 metros de altura.
+            A roda-gigante conta com 42 cabines climatizadas, cada uma com capacidade para até 10 pessoas. Algumas cabines são exclusivas, com opções para eventos e até experiências gastronômicas. O passeio dura cerca de 25 minutos, tempo suficiente para apreciar marcos icônicos da cidade, como a Ponte Estaiada, o Pico do Jaraguá, e os arranha-céus da Avenida Paulista, especialmente ao pôr do sol ou à noite, quando a cidade fica iluminada.
+            A Roda Rico é uma atração segura e acessível para todas as idades, com infraestrutura moderna e uma área ao redor que oferece opções de alimentação e lazer. É um programa perfeito para turistas e moradores que desejam uma nova perspectiva da cidade de São Paulo.</p>
 
 
         </section>
 
+        <hr>
+
+        <div class="feedback">
+            <h1>Avalie este Local</h1>
+            <form id="avaliacao-form">
+                <label>Avaliação:</label>
+                <div class="estrelas">
+                    <span class="estrela" data-valor="1">★</span>
+                    <span class="estrela" data-valor="2">★</span>
+                    <span class="estrela" data-valor="3">★</span>
+                    <span class="estrela" data-valor="4">★</span>
+                    <span class="estrela" data-valor="5">★</span>
+                </div>
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+
+            <div id="feedback">
+                <h2>Avaliações de Usuários</h2>
+                <ul id="lista-avaliacoes"></ul>
+            </div>
+
+        </div>
+        <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo">↑</button>
+
     </main>
 
+    <footer>
+        Fale Conosco: maptur@gmail.com | (11) 1234-5678<br>
+        Siga-nos: @MapTur<br>
+        © 2024 MapTur. Todos os direitos reservados.
+
+    </footer>
+
     <script src="../js/ponto-script.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>
