@@ -102,6 +102,7 @@ nav ul li a:hover {
 .signup {
     color: white;
     background-color: #8c00ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .app {
@@ -127,6 +128,7 @@ footer {
         flex-direction: column;
         cursor: pointer;
     }
+
 
     nav{
         display: none;
@@ -165,7 +167,7 @@ footer {
         right: 0;
         width: 200px;
         height: 100vh;
-        background-color: #fff;
+        background-color: #f8f5ff;
         flex-direction: column;
         align-items: flex-start;
         padding-top: 20px;
@@ -182,6 +184,16 @@ footer {
 
     footer {
         font-size: 15px;
-        height: 95px;
+        height: 125px;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .auth-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
     }
 }
