@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -14,14 +14,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, #fdfaff 0%, #b490ff 54%, rgba(135, 79, 255, 1) 100%);
+    background: #b976ff;
     width: 100%;
     height: 80px;
 }
 
 .hamburger {
-    display: none; /* Oculto em telas maiores */
+    display: none;
+    /* Oculto em telas maiores */
     flex-direction: column;
     cursor: pointer;
 }
@@ -35,15 +35,7 @@ header {
 }
 
 .logo img {
-    width: 80px;
-}
-
-.titulo {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 150px;
 }
 
 nav ul {
@@ -51,7 +43,10 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 nav ul li {
@@ -60,12 +55,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: 200px;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #8c00ff;
+    color: #400074;
 }
 
 .auth-buttons {
@@ -96,8 +92,11 @@ nav ul li a:hover {
 
 .signup {
     color: white;
-    background-color: #8c00ff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #c37aff7a;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 .app {
@@ -113,11 +112,14 @@ footer {
     align-items: center;
     justify-content: space-around;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 /* Menu hamburguinho em telas menores */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -125,30 +127,44 @@ footer {
     }
 
 
-    nav{
+    nav {
         display: none;
     }
+
     nav ul li {
-        margin: 10px 0; /* Espaçamento entre os itens */
-        width: 100%; /* Ocupa toda a largura do menu */
-        text-align: left; /* Alinha o texto à esquerda */
+        margin: 10px 0;
+        /* Espaçamento entre os itens */
+        width: 100%;
+        /* Ocupa toda a largura do menu */
+        text-align: left;
+        /* Alinha o texto à esquerda */
     }
 
     nav ul li a {
-        display: block; /* Garante que o link ocupe toda a área do item */
-        padding: 10px 10px; /* Espaçamento interno para facilitar o toque */
-        font-size: 1.2em; /* Aumenta o tamanho da fonte */
+        display: block;
+        /* Garante que o link ocupe toda a área do item */
+        padding: 10px 10px;
+        /* Espaçamento interno para facilitar o toque */
+        font-size: 1.2em;
+        /* Aumenta o tamanho da fonte */
         font-weight: bold;
-        color: #333; /* Cor do texto */
+        color: #333;
+        /* Cor do texto */
         text-decoration: none;
-        background-color: #b06fdb4e; /* Fundo claro para os itens */
+        background-color: #b06fdb4e;
+        /* Fundo claro para os itens */
+        font-family: "Parkinsans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
 
         transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     nav ul li a:hover {
-        background-color: #b490ff; /* Cor de fundo ao passar o mouse */
-        color: #fff; /* Cor do texto ao passar o mouse */
+        background-color: #b490ff;
+        /* Cor de fundo ao passar o mouse */
+        color: #fff;
+        /* Cor do texto ao passar o mouse */
     }
 
     /* Adiciona um efeito de sombra para destacar os itens */
@@ -158,7 +174,8 @@ footer {
 
     nav ul {
         position: absolute;
-        top: 80px; /* Altura do header */
+        top: 80px;
+        /* Altura do header */
         right: 0;
         width: 200px;
         height: 100vh;
@@ -166,14 +183,16 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 20px;
-        transform: translateX(100%); /* Esconde o menu fora da tela */
+        transform: translateX(100%);
+        /* Esconde o menu fora da tela */
         transition: transform 0.3s ease;
         overflow: hidden;
-        z-index: 1000; /* Assegura que o menu está acima de outros elementos */
+        z-index: 1000;
+        /* Assegura que o menu está acima de outros elementos */
     }
 
     /* Exibe o menu quando a classe 'show' está ativa */
-    nav ul.show{
+    nav ul.show {
         transform: translateX(0);
     }
 
