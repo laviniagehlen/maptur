@@ -128,9 +128,9 @@ input[type="password"] {
 button {
     margin: 0 auto;
     padding: 0px 0px;
-    background-color: #1a191bd0;
+    background-color: #202020d0;
     color: rgb(238, 232, 232);
-    width: 120px;
+    width: 110px;
     height: 30px;
     margin-top: 20px;
     /* Adiciona um espaço acima do botão */
