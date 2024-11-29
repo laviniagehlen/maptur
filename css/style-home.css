@@ -199,9 +199,8 @@ body {
 .sobre h1{
     position: absolute;
     top: 0;
-    left: 5%;
+    left: 10%;
     font-size: 50px;
-   
 }
 .img-sobre1 {
     position: relative;
@@ -226,7 +225,7 @@ body {
 .txt-sobre {
     position: absolute;
     left: 15%;
-    padding: 1%;
+    bottom: 30%;
     width: 20%;
     background-color: rgba(159, 94, 230, 0.6); /* Cor #9f5ee6 com 50% de transparência */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombras suaves para dar destaque */
@@ -324,6 +323,11 @@ body {
     /* Ajustes para telas menores como celulares */
     .sobre{
         margin-top: 20%;
+        margin-bottom: 0px;
+    }
+    .sobre h1{
+        top: -50px;
+        text-align: center;
     }
     .img-sobre1{
         border-radius: 0;
@@ -354,12 +358,15 @@ body {
     }
 
     .img-sobre2{
+        display: none;
         width: 50%;
+        top: 0;
         right: 0;
 
     }
     .img-sobre3{
-        width: 60%;
+        display: none;
+        width: 50%;
         left: 0;
 
     }
