@@ -26,6 +26,7 @@ body {
 .text-banner1{
     width: 80%;
     margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .section-container {
@@ -40,7 +41,7 @@ body {
 
 .img-1 {
     width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
 }
 
@@ -57,8 +58,11 @@ body {
     padding: 2%;
     display: flex;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
-    box-shadow: 0 10px 8px 0 rgba(62, 10, 75, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)}
+    box-shadow: 0 10px 8px 0 rgba(62, 10, 75, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
+}
+    
 
 .img-1 {
     width: 30%;
@@ -75,6 +79,7 @@ body {
     width: 40%;
     background-color: rgb(235, 235, 235);
     margin-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .img-1 {
@@ -91,7 +96,7 @@ body {
 .text-1 {
     width: 30%;
     padding: 1%
-}
+    font-family}
     
 
 /*img-banner2*/
@@ -136,12 +141,18 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Garante que a parte de trás do card não seja visível quando virar */
+  
 }
+
+.front h3
+{color: white;}
+
 
 .card-img .front img {
     width: 80%;
     height: 80%;
     border-radius: 10px; /* Bordas arredondadas */
+
 }
 
 /* Estilo de trás do card (texto) */
@@ -149,8 +160,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para o texto */
-    color: white;
+    background-color: white; /* Fundo branco */
+    color: black; /* Texto preto */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +170,10 @@ body {
     border-radius: 10px; 
     backface-visibility: hidden; /* Esconde a parte da frente ao virar */
     transform: rotateY(180deg); /* Coloca a parte de trás virada para trás inicialmente */
+   
+}
+
+
 }
 
 .texto-sla {
@@ -184,14 +199,16 @@ body {
 .sobre h1{
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 5%;
     font-size: 50px;
+   
 }
 .img-sobre1 {
     position: relative;
     background-color: darkgrey;
     width: 40%;
     height: 80%;
+    left: 20%;
     bottom: 10%;
     border-radius: 5%;
     overflow: hidden;
@@ -201,6 +218,7 @@ body {
     height: 100%;
     object-fit: cover; /* Faz a imagem preencher a div sem distorções */
     border-radius: 0%; /* Aplica bordas arredondadas à imagem */
+    left: auto;
 }
 
 
@@ -208,12 +226,15 @@ body {
 .txt-sobre {
     position: absolute;
     left: 15%;
-    bottom: 30%;
+    padding: 1%;
     width: 20%;
     background-color: rgba(159, 94, 230, 0.6); /* Cor #9f5ee6 com 50% de transparência */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombras suaves para dar destaque */
     margin: 20px; /* Margem ao redor */
     border-radius: 10px; /* Bordas arredondadas */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
 }
 
 .txt-sobre div {
@@ -222,7 +243,7 @@ body {
 }
 
 .txt-sobre p {
-    color: black;  /* Cor do texto, pode ser qualquer cor que você preferir */
+    color: rgb(255, 255, 255);  /* Cor do texto, pode ser qualquer cor que você preferir */
     font-size: 1.1em;
     line-height: 1.5;
 }
@@ -242,7 +263,7 @@ body {
 .img-sobre2{
     width: 20%;
     position: absolute;
-    right: 20%;
+    left: 20%;
 }
 
 .img-sobre2 img{
