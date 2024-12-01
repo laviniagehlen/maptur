@@ -122,6 +122,9 @@ footer {
     font-weight: weight;
     font-style: normal;
 }
+.userway_buttons_wrapper {
+    margin-top: 100px;
+    }
 
 /* Menu hamburguinho em telas menores */
 @media (max-width: 800px) {
