@@ -76,7 +76,10 @@ img {
     text-align: center;
     background-color: #f5f2ff;
     opacity: 0.8;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 /* Texto numérico (1/3 etc) */
@@ -113,9 +116,13 @@ img {
 
 /* Feedback */
 
-h1, h2 {
+h1,
+h2 {
     color: #333;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 form {
@@ -123,7 +130,16 @@ form {
 }
 
 .descricao {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 50px, ;
 }
 
 label {
@@ -140,7 +156,8 @@ label {
 }
 
 .estrela.checked {
-    color: #FFD700; /* cor da estrela quando selecionada */
+    color: #FFD700;
+    /* cor da estrela quando selecionada */
 }
 
 textarea {
@@ -187,27 +204,46 @@ hr {
 
 li {
     margin: 30px;
+    font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 #backToTopBtn {
-    display: none; /* Oculto por padrão */
-    position: fixed; /* Fixo no canto inferior direito */
+    display: none;
+    /* Oculto por padrão */
+    position: fixed;
+    /* Fixo no canto inferior direito */
     bottom: 20px;
     right: 30px;
-    z-index: 99; /* Fica sobre outros elementos */
+    z-index: 99;
+    /* Fica sobre outros elementos */
     font-size: 18px;
-    background-color: #333333; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Sem bordas */
+    background-color: #333333;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Sem bordas */
     padding: 15px;
-    border-radius: 10px; /* Borda arredondada */
-    cursor: pointer; /* Mãozinha no hover */
+    border-radius: 10px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Mãozinha no hover */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  #backToTopBtn:hover {
-    background-color: #b490ff; /* Cor quando o mouse passa em cima */
-  }
+}
+
+#backToTopBtn:hover {
+    background-color: #b490ff;
+    /* Cor quando o mouse passa em cima */
+}
+
+
+
+.foto-ponto {
+    border-radius: 5px;
+}
 
 @keyframes fade {
     from {
@@ -236,18 +272,6 @@ li {
     }
 
 
-    
+
 }
 
-.descricao {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-bottom: 100px;
-    margin-left: 30px;
-    margin-right: 50px,;
-}
-
-.foto-ponto {
-    border-radius: 5px;
-}
