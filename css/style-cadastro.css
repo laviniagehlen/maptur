@@ -13,12 +13,12 @@
 }
 
 h1 {
+  
     font-family: "Moderustic", sans-serif; 
     /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
-    font-size: 70px;
+    font-size: 50px;
     /* Tamanho da fonte */
-    color: #b976ff;
-
+    color: #212122;
 }
 
 .cadastro-content {
@@ -29,28 +29,32 @@ h1 {
     font-size: 30px;
 }
 .cadastro-form {
-    width: 40%;
+    margin-top: 30px;
+    width: 35%;
+    height: 15%;
     padding: 5%;
-    border-radius: 5px;
-    background: rgba(185, 118, 255, 0.8); /* Adicionado efeito de transparência */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionado uma leve sombra para destaque */
+    border-radius: 8px;
+    background: rgba(172, 107, 241, 0.8); /* Adicionado efeito de transparência */
+    
 }
 .cadastro-form h1{
-    color: #9f5ee6;
-    font-size: 35px;
+    text-align: center;
+    color: #222124;
+    font-size: 20px;
 }
 
 form {
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 10px;
+    margin-left: -10px;
     display: flex;
+    justify-content: center;
     border-radius: 5px;
-    width: 90%;
+    height: 90%;
+    width: 97%;
     background-color: rgba(255, 255, 255, 0.9); /* Transparência no fundo do formulário */
     padding: 10%;
 }
-
 .input-icone {
     position: relative;
     display: inline-block;
@@ -115,10 +119,7 @@ button {
 }
 
 
-img.icone {
-    width: 35%;
-    height: 25px;
-}
+
 
 footer {
     position: fixed;
@@ -127,11 +128,9 @@ footer {
 }
 
 /* Estilo para a régua horizontal */
-@media (max-width: 768px) {
+@media (max-width: 708px) {
 
-    h1{
-        font-size: 56px;
-    }
+    
     .cadastro {
         width: 100%;
         flex-direction: column;
