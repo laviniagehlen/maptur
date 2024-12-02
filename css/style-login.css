@@ -30,7 +30,9 @@ h1 {
 }
 
 .cadastro-form {
-    width: 40%;
+    margin-top: 0px;
+    justify-content: center;
+    width: 30%;
     padding: 5%;
     border-radius: 5px;
     background: rgba(185, 118, 255, 0.8); /* Adicionado efeito de transparência */
@@ -38,8 +40,9 @@ h1 {
 }
 
 .cadastro-form h1{
-    color: #9f5ee6;
-    font-size: 35px;
+    color: #323133;
+    font-size: 25px;
+   text-align: center;
 }
 
 form {
@@ -47,6 +50,7 @@ form {
     justify-content: flex-start;
     margin-left: 10px;
     display: flex;
+    justify-content: center;
     border-radius: 5px;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.9); /* Transparência no fundo do formulário */
