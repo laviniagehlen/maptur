@@ -5,16 +5,19 @@ body {
 .descricao-foto {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-size: 17px;
   font-style: normal;
 }
 
 .legenda-foto {
-  font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
+  font-family: "Moderustic", sans-serif; 
+  font-optical-sizing: auto; 
+  font-size: 18.5px;
   font-style: normal;
   margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .carrossel {
@@ -27,6 +30,11 @@ body {
   margin-top: 2%;
 }
 
+hr {
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
 a .sugestao {
   border-radius: 10px;
   height: 250px;
@@ -36,8 +44,8 @@ a .sugestao {
 }
 
 .card {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   justify-content: center;
   margin-right: 20px;
   margin-left: 55px;
@@ -54,55 +62,6 @@ a .sugestao {
   gap: 20px;
 }
 
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center
-}
-
-h2 {
-  font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.dicas {
-  margin-bottom: 60px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100;
-}
-
-.circulo {
-  width: 400px;
-  /* Largura do círculo */
-  height: 400px;
-  /* Altura do círculo */
-  background-color: #EAE0FF;
-  /* Cor de fundo */
-  border-radius: 50%;
-  /* Deixa as bordas arredondadas formando um círculo */
-  margin-bottom: 50px;
-  margin-left: 20px;
-}
-
-.descricao {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-  background-color: rgb(247, 234, 255);
-  border: 1.5px solid rgb(139, 110, 167);
-  margin-left: 20px;
-  margin-right: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-
 .titulo-dicas {
   display: flex;
   justify-content: flex-end;
@@ -112,10 +71,42 @@ h2 {
   margin-right: 200px;
   font-family: "Parkinsans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-size: 25px;
   font-style: normal;
   margin-bottom: 19px;
 }
+
+.dicas {
+  background-color: #ebe1ff;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100;
+}
+
+.circulo {
+  width: 400px; /* Largura do círculo */ 
+  height: 400px; /* Altura do círculo */
+  border-radius: 50%; /* Deixa as bordas arredondadas formando um círculo */
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  font-style: normal;
+  width: 1000px;
+  
+}
+
+
 
 /*CARROSSEL*/
 
