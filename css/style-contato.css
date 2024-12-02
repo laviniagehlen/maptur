@@ -5,138 +5,166 @@
 }
 
 body {
-    background-color: #ece5fd;
+    /* Este é o fundo do nosso desenho. Escolhemos a fonte (como a letra em um caderno) e pintamos o fundo de lilás claro! */
+    font-family: Arial, sans-serif;
+    background-color: #d5c2ff;
 }
 
+
+/* Este é o carrossel da página */
+
 div.scroll-container {
-    background-color: #B490FF;
+    background-color: #fff;
     overflow: hidden;
     white-space: nowrap;
     padding: 10px;
     display: flex;
     align-items: center;
     font-size: 12;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(254, 253, 255, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
+}
+
+/*comentários do carrossel*/
+.comment {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    text-align: column;
+    padding: 10px;
+    box-shadow: 0 2px 5px #874fff(0, 0, 0, 0.1);
 
 }
 
+/* Isso é um botão para ir para o próximo. */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+/* Quando passamos o mouse, o botão muda de cor! */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #9f5ee6(0, 0, 0, 0.8);
 }
 
 /* Indicadores (bolinhas abaixo do carrossel) */
-.dot-container {
-    text-align: center;
+.div-container {
+    text-align: column;
     padding: 10px;
     background: #ddd;
+
 }
 
+/* Cada bolinha do carrossel. */
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #874fff;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
+/* A bolinha muda de cor quando clicamos ou passamos o mouse. */
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: #9480a7;
 }
 
-header {
-    background-color: #B490FF;
-    color: #f7f2f2;
-    padding: 10px;
-    text-align: center;
-
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-
-}
-
-main {
-    /*texto1*/
+.quadro {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    font-family: Arial, sans-serif;
-    color: #0a0a0a;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f3f0ff; 
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    max-width: 900px; 
 }
 
 .flex-content {
+    width: 40%;
+    margin-bottom: 20px; 
     display: flex;
-    justify-content: space-around;
-    border-radius: 50px;
-    width: 80%;
-    height: 50%;
-
+    justify-content: center;
+    align-items: center;
+}
+.flex-content img {
+    max-width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.info-content {
-    width: 50%;
+form {
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 2px solid #9f5ee6; 
+    border-radius: 10px; 
+    background-color: #ffffff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-content img {
-    width: 80%;
-    border: 0px solid #535252;
-    border-radius: auto;
-    box-shadow: 5px 5px 15px rgba(10, 10, 10, 0.3);
-}
-
-form h2 {
-    margin-top: 0;
-    color: #f3f3f7;
-    text-align: column;
-    width: max-content;
-
-}
-
-label {
+form label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
-
+    margin-bottom: 8px;
+    color: #6c3fcc; 
+    font-family: Arial, sans-serif;
 }
 
-input[type="text"],
-input[type="email"],
-
-textarea {
-    width: 80%;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #8c71c9;
-    border-radius: 25px;
-
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; 
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #9f5ee6; 
+    border-radius: 8px; 
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-input[type="submit"] {
-    background-color: #ae8ff1;
-    color: #fcf8f8;
-    border-radius: 20%;
-    margin-bottom: 10px;
-    width: 60px;
-    border: 50px;
-    text-align: center;
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #6c3fcc; /* Cor de borda ao focar */
+    outline: none;
+    box-shadow: 0px 0px 6px rgba(108, 63, 204, 0.4); /* Sombra ao focar */
 }
 
+form textarea {
+    height: 120px; /* Altura maior para mensagens */
+    resize: none; /* Remove opção de redimensionar */
+}
 
+form input[type="submit"] {
+    width: 100%; /* Botão ocupa a largura total */
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #874fff, #6c3fcc); /* Gradiente no botão */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(135deg, #6c3fcc, #874fff); /* Gradiente invertido */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/*alerta de preenchimento*/
 .modal {
     display: none;
     position: fixed;
@@ -148,47 +176,37 @@ input[type="submit"] {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #d4d3d4(0, 0, 0);
+    background-color: #edebf0(0, 0, 0, 0.4);
 }
 
+/* Esta é a caixinha dentro da janelinha mágica. */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #ffffff;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #d6d6d6;
     width: 30%;
     border-radius: 8px;
     margin-top: 10%;
 }
 
+/* Esse é o botão de fechar, aquele "X" no canto. */
 .close {
-    color: #aaa;
+    color: #b976ff;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
+/* Quando passamos o mouse em cima ou clicamos, ele muda de cor! */
 .close:hover,
 .close:focus {
-    color: rgb(8, 8, 8);
+    color: #9f5ee6(8, 8, 8);
     text-decoration: none;
     cursor: pointer;
 }
 
-footer {
-    background-color: #B490FF;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-}
 
-h1 {
-    text-align: column;
-
-}
 
 .container {
     display: flex;
@@ -201,37 +219,22 @@ h1 {
 }
 
 
+
 @media (max-width: 480px) {
-
-    .flex-content {
+    .quadro {
+        width: 90%; /* Ajusta largura para telas menores */
+        padding: 15px;
         flex-direction: column;
-        width: 100%;
-        height: 50%;
-        justify-content: center;
-        align-items: center;
     }
 
-    main {
-        height: auto;
-    }
-    .info-content {
+    form {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 5%;
-    
-    }
-    .info-content h1 {
-        text-align: center;
-    }
-    .info-content img {
-       width: 80%;
+        padding: 15px;
     }
 
-    form{
-        width: 80%;
+    .flex-content img {
+        display: none;
     }
+
 
 }

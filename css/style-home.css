@@ -1,12 +1,14 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0%;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
     width: 100%;
     height: 100%;
+    background-color: rgb(255, 255, 255)
 }
 
 .primeira {
@@ -16,14 +18,26 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
-.primeira video{
+.primeira video {
     width: 80%;
 }
-.text-banner1{
+
+.text-banner1 {
     width: 80%;
     margin-top: 50px;
+}
+
+.text-banner1 h1 {
+    font-family: "Moderustic", sans-serif;
+    font-size: 36px;
+}
+
+.text-banner1 p {
+    text-align: justify;
+    font-size: 20px;
 }
 
 .section-container {
@@ -33,66 +47,35 @@ body {
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
+
 }
 
 .img-1 {
-    width: 30%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   
+    width: 40%;
+
 }
 
 .img-1 img {
     width: 100%;
-    height: auto;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(221, 44, 177, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
 }
 
 .text-1 {
     width: 30%;
-    padding: 2%;
     display: flex;
+    height: 350px;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-2 {
-    width: 30%;
-    height: 28vh;
-    border-radius: 10%;
-    background-color: rgb(255, 255, 255);
-}
-
-.img-2 img {
+.text-1 p {
     width: 100%;
-    height: 100%;
-    margin-top: 10%;
+    padding: 2%;
+    font-size: 20px;
+
 }
 
-.text-2 {
-    width: 40%;
-    background-color: rgb(42, 61, 165);
-    margin-top: 5%;
-}
-
-.img-3 {
-    width: 35%;
-    height: 30vh;
-    background-color: rgb(255, 255, 255);
-    margin-top: 10%;
-}
-
-.img-3 img {
-    width: 110%;
-    height: 100%;
-    margin-top: 10%;
-}
-
-.text-3 {
-    width: 40%;
-    height: 30vh;
-    background-color: rgb(111, 0, 255);
-    margin-top: 17%;
-}
 
 /*img-banner2*/
 .img-banner2 {
@@ -100,61 +83,260 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
-    background-color: rgb(196, 182, 182);
+    padding: 20px;
     margin-bottom: 5%;
+    background-color: rgb(230, 175, 241);
+    background-image: linear-gradient(to right, rgb(208, 101, 230), rgb(156, 71, 196), rgb(107, 33, 168), rgb(156, 16, 184))
 }
 
-.missao {
-    height: 90px;
-    width: 90px;
-}
-
-.visao {
-    height: 90px;
-    width: 80px;
-    list-style: none;
-}
-
-.valor {
-    height: 90px;
-    width: 80px;
-}
-
+/* Container do card - será o responsável por controlar a perspectiva da rotação 3D */
 .card-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
-    border-radius: 50%;
+    background-color: rgb(185, 118, 255);
+    border-radius: 10px;
+    /* Bordas arredondadas para o efeito */
     padding: 2%;
+    width: 200px;
+    /* Definindo largura fixa */
+    height: 200px;
+    /* Definindo altura fixa */
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    /* Permite a rotação em 3D */
+    transition: transform 0.6s;
+    /* Adiciona uma transição suave ao virar */
+    perspective: 1000px;
+    /* Cria a percepção de profundidade */
+}
+
+/* Quando passar o mouse, o card vira 180 graus */
+.card-img:hover {
+    transform: rotateY(180deg);
+    /* Aplica a rotação de 180 graus no eixo Y */
+}
+
+/* Estilo da frente do card (imagem) */
+.card-img .front {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Garante que a parte de trás do card não seja visível quando virar */
+
+}
+
+.front h3 {
+    color: white;
 }
 
 
+.card-img .front img {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    /* Bordas arredondadas */
 
+}
 
-
-
-.segundo {
-    margin-top: 190px;
-    height: 20vh;
+/* Estilo de trás do card (texto) */
+.card-img .back {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    background-color: white;
+    /* Fundo branco */
+    color: black;
+    /* Texto preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    /* Esconde a parte da frente ao virar */
+    transform: rotateY(180deg);
+    /* Coloca a parte de trás virada para trás inicialmente */
 
+}
+
+.texto-sla {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Quando o mouse passa sobre o card, o texto aparece */
+.card-img:hover .texto-sla {
+    opacity: 1;
 }
 
 .sobre {
-    justify-content: center;
     display: flex;
-    background-color: rgb(111, 0, 255);
-    height: 50vh;
-    width: 50%;
-    border-radius: 9%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-.content{
-    z-index: -2;
+
+.sobre h1 {
+    font-size: 50px;
+    color: white;
+    background-color: rgba(159, 94, 230, 0.6);
+}
+
+.img-sobre1 {
+    width: 40%;
+    height: 80%;
+    border-radius: 5%;
+}
+
+.img-sobre1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Faz a imagem preencher a div sem distorções */
+    border-radius: 0%;
+    /* Aplica bordas arredondadas à imagem */
+    left: auto;
+    border-radius: 10px;
+}
+
+
+.txt-sobre {
+    width: 45%;
+    background-color: rgba(159, 94, 230, 0.6);
+    /* Cor #9f5ee6 com 50% de transparência */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombras suaves para dar destaque */
+    margin: 20px;
+    /* Margem ao redor */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+
+}
+
+.txt-sobre div {
+    padding: 5px;
+    /* Espaçamento interno */
+    background-color: rgba(159, 94, 230, 0.6);
+    /* Fundo transparente com cor #9f5ee6 e 50% de opacidade */
+}
+
+.txt-sobre p {
+    color: rgb(255, 255, 255);
+    /* Cor do texto, pode ser qualquer cor que você preferir */
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Ajustes para tablets e dispositivos com telas médias */
+    .primeira,
+    .section-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-1,
+    .img-1 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .img-banner2 {
+        flex-direction: column;
+        /* Alinha as imagens verticalmente em telas pequenas */
+    }
+
+    .sobre h1 {
+        font-size: 35px;
+        /* Reduz o tamanho do título */
+    }
+
+    .img-sobre1,
+    .txt-sobre {
+        width: 100%;
+        /* Faz a imagem e o texto ocupar toda a largura */
+        position: 1%;
+    }
+
+    .img-sobre2,
+    .img-sobre3 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .card-img {
+        width: 60%;
+        margin: 5%;
+    }
+
+    /* Ajustes para telas menores como celulares */
+    .sobre {
+        flex-direction: column;
+        margin-top: 20%;
+        margin-bottom: 0px;
+    }
+
+    .sobre h1 {
+        padding: 2%;
+        text-align: center;
+
+    }
+
+    .txt-sobre div {
+        padding: 10%;
+    }
+
+    .img-sobre1 {
+        border-radius: 0;
+        padding: 10%;
+    }
+
+    .text-1 {
+        width: 90%;
+        /* Reduz a largura do texto */
+        padding: 6%;
+    }
+
+    .text-1 p {
+        margin-top: 8%;
+        font-size: 18px;
+
+    }
+
+    .text-banner1 p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .img-1 {
+        width: 90%;
+    }
+
+    .img-1 img {
+        width: 100%;
+        /* Garante que a imagem ocupe toda a largura disponível */
+    }
+
+    .primeira video {
+        width: 100%;
+    }
+
+    .section-container {
+        flex-direction: column;
+    }
+
+    .section-container1 {
+        flex-direction: column-reverse !important;
+    }
+
+
 }
