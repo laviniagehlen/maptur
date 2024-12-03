@@ -10,13 +10,6 @@ body {
     background-color: #d5c2ff;
 }
 
-.titulo {
-    text-align: center;
-    font-family: "Moderustic", sans-serif;
-    font-size: 20px;
-    padding: 0%;
-    
-}
 
 /* Este é o carrossel da página */
 
@@ -88,34 +81,33 @@ div.scroll-container {
     align-items: center;
     margin: 30px auto;
     padding: 20px;
-    background-color: #f3f0ff;
+    background-color: #f3f0ff; 
     border-radius: 15px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 900px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    max-width: 900px; 
 }
 
 .flex-content {
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .flex-content img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 form {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #9f5ee6;
-    border-radius: 10px;
-    background-color: #ffffff;
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 2px solid #9f5ee6; 
+    border-radius: 10px; 
+    background-color: #ffffff; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -123,18 +115,18 @@ form label {
     display: block;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #6c3fcc;
+    color: #6c3fcc; 
     font-family: Arial, sans-serif;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 100%;
+    width: 100%; 
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #9f5ee6;
-    border-radius: 8px;
+    border: 1px solid #9f5ee6; 
+    border-radius: 8px; 
     font-size: 16px;
     font-family: Arial, sans-serif;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -143,116 +135,34 @@ form textarea {
 form input[type="text"]:focus,
 form input[type="email"]:focus,
 form textarea:focus {
-    border-color: #6c3fcc;
-    /* Cor de borda ao focar */
+    border-color: #6c3fcc; /* Cor de borda ao focar */
     outline: none;
-    box-shadow: 0px 0px 6px rgba(108, 63, 204, 0.4);
-    /* Sombra ao focar */
+    box-shadow: 0px 0px 6px rgba(108, 63, 204, 0.4); /* Sombra ao focar */
 }
 
 form textarea {
-    height: 120px;
-    /* Altura maior para mensagens */
-    resize: none;
-    /* Remove opção de redimensionar */
+    height: 120px; /* Altura maior para mensagens */
+    resize: none; /* Remove opção de redimensionar */
 }
 
 form input[type="submit"] {
-    width: 100%;
-    /* Botão ocupa a largura total */
+    width: 100%; /* Botão ocupa a largura total */
     padding: 12px;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(135deg, #874fff, #6c3fcc);
-    /* Gradiente no botão */
+    background: linear-gradient(135deg, #874fff, #6c3fcc); /* Gradiente no botão */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
-
-#rating {
-    font-size: 2rem;
-}
-
-.star {
-    cursor: pointer;
-    color: gray;
-}
-
-.star.selected {
-    color: gold;
-}
-
-/*comentários*/
-.comment {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 35%;
-  }
-  
-  .user-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
-  
-  .comment-content {
-    max-width: calc(100% - 70px);
-  }
-  
-  .user-name {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-    font-size: 1rem;
-  }
-  
-  .user-comment {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #555;
-  }
-  
-  .comment-actions {
-    margin-top: 10px;
-  }
-  
-  .comment-actions button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .comment-actions button:hover {
-    background-color: #0056b3;
-  }
-  
-
-  
 
 form input[type="submit"]:hover {
-    background: linear-gradient(135deg, #6c3fcc, #874fff);
-    /* Gradiente invertido */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    /* Sombra mais forte */
+    background: linear-gradient(135deg, #6c3fcc, #874fff); /* Gradiente invertido */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
 }
-
 
 /*alerta de preenchimento*/
 .modal {
@@ -312,8 +222,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 480px) {
     .quadro {
-        width: 90%;
-        /* Ajusta largura para telas menores */
+        width: 90%; /* Ajusta largura para telas menores */
         padding: 15px;
         flex-direction: column;
     }
