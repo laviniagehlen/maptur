@@ -13,6 +13,7 @@
 }
 
 h1 {
+    margin-top: -6px;
     font-family: "Moderustic", sans-serif;
     /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
     font-size: 70px;
@@ -30,23 +31,26 @@ h1 {
 }
 
 .cadastro-form {
-    margin-top: 35px;
+    margin-top: 25px;
     justify-content: center;
     width: 30%;
     padding: 5%;
     border-radius: 8px;
-    background: rgba(167, 101, 236, 0.8); /* Adicionado efeito de transparência */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionado uma leve sombra para destaque */
+    background: rgba(167, 101, 236, 0.8);
+    /* Adicionado efeito de transparência */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adicionado uma leve sombra para destaque */
 }
 
-.cadastro-form h1{
+.cadastro-form h1 {
     color: #323133;
     font-size: 25px;
-   text-align: center;
+    text-align: center;
 }
-img{
+
+img {
     width: 55%;
-   
+
 }
 
 form {
@@ -58,7 +62,8 @@ form {
     border-radius: 5px;
     height: 90%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* Transparência no fundo do formulário */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Transparência no fundo do formulário */
     padding: 10%;
 }
 
@@ -93,11 +98,12 @@ button {
     font-size: 16px;
     width: 35%;
     height: 25px;
-   
+
 }
 
 /* Estilo específico para o link "Cadastrar-se" */
 .btn-cadastrar {
+
     font-size: 20px;
     text-align: left;
     /* Alinha o conteúdo à esquerda */
@@ -118,10 +124,11 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    h1{
+    h1 {
         font-size: 56px;
         margin-bottom: 10%;
     }
+
     .cadastro {
         width: 100%;
         flex-direction: column;
@@ -142,9 +149,10 @@ footer {
     }
 
     footer {
-        position: relative;
-       
-        
-        width: 90%;
+        font-size: 15px;
+        height: 125px;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: ;
     }
 }

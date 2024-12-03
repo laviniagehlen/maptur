@@ -12,9 +12,9 @@
     padding: 30px;
 }
 
-h1{ 
-    margin-top: 70px;
-    font-size: 20px;
+h1 {
+    margin-top: 50px;
+    font-size: 50px;
     color: #4c4c50;
     text-align: center;
 }
@@ -22,16 +22,16 @@ h1{
 
 h2 {
     text-align: center;
-    font-family: "Moderustic", sans-serif; 
+    font-family: "Moderustic", sans-serif;
     /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
     font-size: 22px;
     /* Tamanho da fonte */
-    color: #4c4c50;
+    color: #676769;
 }
 
-img{
+img {
     width: 55%;
-    margin-top: 5px;
+
 }
 
 .cadastro-content {
@@ -41,16 +41,21 @@ img{
     justify-content: center;
     font-size: 30px;
 }
+
 .cadastro-form {
     margin-top: 35px;
     justify-content: center;
     width: 30%;
     padding: 5%;
     border-radius: 8px;
-    background: rgba(167, 101, 236, 0.8); /* Adicionado efeito de transparência */
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionado uma leve sombra para destaque */
+    background: rgba(167, 101, 236, 0.8);
+    /* Adicionado efeito de transparência */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adicionado uma leve sombra para destaque */
 }
-     .cadastro-form h1{
+
+
+.cadastro-form h1 {
     text-align: center;
     color: #222124;
     font-size: 20px;
@@ -65,9 +70,11 @@ form {
     border-radius: 5px;
     height: 90%;
     width: 97%;
-    background-color: rgba(255, 255, 255, 0.9); /* Transparência no fundo do formulário */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Transparência no fundo do formulário */
     padding: 10%;
 }
+
 .input-icone {
     position: relative;
     display: inline-block;
@@ -134,19 +141,14 @@ button {
 
 
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 /* Estilo para a régua horizontal */
 @media screen and (max-width: 768px) {
-  h1{
-    font-size: 56px;
-    margin-bottom: 10%;
-  }
-    
+    h1 {
+        font-size: 56px;
+        margin-bottom: 10%;
+    }
+
     .cadastro {
         width: 100%;
         flex-direction: column;
@@ -166,5 +168,11 @@ footer {
 
     }
 
-
+    footer {
+        font-size: 15px;
+        height: 125px;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
