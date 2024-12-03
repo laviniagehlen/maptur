@@ -10,8 +10,8 @@ body {
 }
 
 .legenda-foto {
-  font-family: "Moderustic", sans-serif; 
-  font-optical-sizing: auto; 
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
   font-size: 18.5px;
   font-style: normal;
   margin-top: 5px;
@@ -86,9 +86,12 @@ a .sugestao {
 }
 
 .circulo {
-  width: 400px; /* Largura do círculo */ 
-  height: 400px; /* Altura do círculo */
-  border-radius: 50%; /* Deixa as bordas arredondadas formando um círculo */
+  width: 400px;
+  /* Largura do círculo */
+  height: 400px;
+  /* Altura do círculo */
+  border-radius: 50%;
+  /* Deixa as bordas arredondadas formando um círculo */
   margin-bottom: 50px;
   margin-top: 50px;
   margin-left: 20px;
@@ -103,7 +106,7 @@ a .sugestao {
   font-size: 18px;
   font-style: normal;
   width: 1000px;
-  
+  padding: 50px;
 }
 
 
@@ -115,6 +118,9 @@ a .sugestao {
   position: relative;
 }
 
+.slide {
+  border-radius: 5px;
+}
 
 /* Texto da legenda */
 .text {
@@ -215,6 +221,10 @@ a .sugestao {
     width: 350px;
   }
 
+  .slideshow-container {
+    width: 90%;
+  }
+
   .titulo {
     font-size: 50px;
     margin-bottom: 40px;
@@ -272,6 +282,9 @@ a .sugestao {
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
   }
 
   .dicas-box {

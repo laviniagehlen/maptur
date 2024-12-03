@@ -282,13 +282,24 @@ li {
         font-size: 11px
     }
 
+    .slideshow-container {
+        width: 80%;
+    }
+
     .descricao {
-        font-size: 13px;
+        font-size: 17px;
         display: flex;
         justify-content: center;
         flex-direction: row;
+        margin-right: 15px;
     }
 
+    .avaliacao-estrela {
+        font-size: 18px;
+    }
 
+    .comentario {
+        font-size: 18px;
+    }
 
 }
