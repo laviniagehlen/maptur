@@ -27,6 +27,7 @@ comments.forEach((comment, index) => {
     comment.style.backgroundColor = '#fff'
 });
 
+
 /*AVALIAÇÃO*/
 document.addEventListener("DOMContentLoaded", function () {
     const stars = document.querySelectorAll(".star");
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     likeButtons.forEach((button) => {
       button.addEventListener("click", function () {
-        alert("Você curtiu o comentário de Júlia Fernandes!");
+        alert("Você curtiu o comentário de um usuário!");
       });
     });
   
