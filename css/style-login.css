@@ -30,12 +30,12 @@ h1 {
 }
 
 .cadastro-form {
-    margin-top: 0px;
+    margin-top: 35px;
     justify-content: center;
     width: 30%;
     padding: 5%;
-    border-radius: 5px;
-    background: rgba(185, 118, 255, 0.8); /* Adicionado efeito de transparência */
+    border-radius: 8px;
+    background: rgba(167, 101, 236, 0.8); /* Adicionado efeito de transparência */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionado uma leve sombra para destaque */
 }
 
@@ -44,15 +44,20 @@ h1 {
     font-size: 25px;
    text-align: center;
 }
+img{
+    width: 55%;
+   
+}
 
 form {
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 10px;
+    margin-left: 5px;
     display: flex;
     justify-content: center;
     border-radius: 5px;
-    width: 90%;
+    height: 90%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.9); /* Transparência no fundo do formulário */
     padding: 10%;
 }
@@ -65,7 +70,7 @@ input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #000000;
+    border: 2px solid #6d6b6b;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -96,12 +101,12 @@ button {
     font-size: 20px;
     text-align: left;
     /* Alinha o conteúdo à esquerda */
-    width: 90%;
+    width: 100%;
     /* Garante que o contêiner ocupe toda a largura */
     color: #8350e2;
-    justify-content: flex-end;
+
     /* Alinha o conteúdo à direita */
-    margin-left: 1px;
+    margin-left: 5px;
     /* Mover o texto um pouco para a direita, se necessário */
 }
 
@@ -136,4 +141,10 @@ footer {
 
     }
 
+    footer {
+        position: relative;
+       
+        
+        width: 90%;
+    }
 }
