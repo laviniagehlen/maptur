@@ -7,6 +7,10 @@ body {
   font-optical-sizing: auto;
   font-size: 17px;
   font-style: normal;
+  width: 80%;
+  text-align: left;
+
+
 }
 
 .legenda-foto {
@@ -47,20 +51,26 @@ a .sugestao {
   margin-top: 100px;
   margin-bottom: 100px;
   justify-content: center;
-  margin-right: 20px;
-  margin-left: 55px;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 2fr); /* 4 colunas por padrão */
+  gap: 20px; /* Espaçamento entre os itens */
   margin-top: 50px;
-  gap: 20px;
 }
+
+
+/* Para telas de celular */
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+  }
+}
+
 
 .titulo-dicas {
   display: flex;
@@ -109,6 +119,9 @@ a .sugestao {
   padding: 50px;
 }
 
+.dicas-box p{
+  width: 100%;
+}
 
 
 /*CARROSSEL*/
@@ -244,15 +257,6 @@ a .sugestao {
 
   .sugestao {
     width: 100%;
-  }
-
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    margin-top: 50px;
-    width: 100%;
-    /* Força a largura total */
   }
 
   .dicas {
