@@ -5,16 +5,23 @@ body {
 .descricao-foto {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-size: 17px;
   font-style: normal;
+  width: 80%;
+  text-align: left;
+
+
 }
 
 .legenda-foto {
-  font-family: "Parkinsans", sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-size: 18.5px;
   font-style: normal;
   margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .carrossel {
@@ -27,6 +34,11 @@ body {
   margin-top: 2%;
 }
 
+hr {
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
 a .sugestao {
   border-radius: 10px;
   height: 250px;
@@ -36,38 +48,46 @@ a .sugestao {
 }
 
 .card {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   justify-content: center;
-  margin-right: 20px;
-  margin-left: 55px;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 2fr); /* 4 colunas por padrão */
+  gap: 20px; /* Espaçamento entre os itens */
   margin-top: 50px;
-  gap: 20px;
 }
 
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center
+
+/* Para telas de celular */
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+  }
 }
 
-h2 {
-  font-family: 'Courier New', Courier, monospace;
+
+.titulo-dicas {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 200px;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 25px;
+  font-style: normal;
+  margin-bottom: 19px;
 }
 
 .dicas {
-  margin-bottom: 60px;
+  background-color: #ebe1ff;
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
@@ -80,42 +100,29 @@ h2 {
   /* Largura do círculo */
   height: 400px;
   /* Altura do círculo */
-  background-color: #EAE0FF;
-  /* Cor de fundo */
   border-radius: 50%;
   /* Deixa as bordas arredondadas formando um círculo */
   margin-bottom: 50px;
+  margin-top: 50px;
   margin-left: 20px;
+  display: flex;
 }
 
 .descricao {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   flex-direction: column;
-  background-color: rgb(247, 234, 255);
-  border: 1.5px solid rgb(139, 110, 167);
-  margin-left: 20px;
-  margin-right: 10px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-size: 18px;
   font-style: normal;
+  width: 1000px;
+  padding: 50px;
 }
 
-.titulo-dicas {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-  margin-left: 300px;
-  margin-right: 200px;
-  font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  margin-bottom: 19px;
+.dicas-box p{
+  width: 100%;
 }
+
 
 /*CARROSSEL*/
 
@@ -124,6 +131,9 @@ h2 {
   position: relative;
 }
 
+.slide {
+  border-radius: 5px;
+}
 
 /* Texto da legenda */
 .text {
@@ -224,6 +234,10 @@ h2 {
     width: 350px;
   }
 
+  .slideshow-container {
+    width: 90%;
+  }
+
   .titulo {
     font-size: 50px;
     margin-bottom: 40px;
@@ -243,15 +257,6 @@ h2 {
 
   .sugestao {
     width: 100%;
-  }
-
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    margin-top: 50px;
-    width: 100%;
-    /* Força a largura total */
   }
 
   .dicas {
@@ -281,6 +286,9 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
   }
 
   .dicas-box {

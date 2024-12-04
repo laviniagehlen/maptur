@@ -119,7 +119,6 @@ footer {
     color: white;
     font-family: "Parkinsans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 }
 .userway_buttons_wrapper {
@@ -206,9 +205,9 @@ footer {
 
     footer {
         font-size: 15px;
-        height: 125px;
-        justify-content: flex-start;
-        flex-direction: column;
+        height: 80px;
+        justify-content: center;
+        flex-direction: column-reverse;
         margin-bottom: 0;
     }
 
