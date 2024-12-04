@@ -13,6 +13,7 @@
 }
 
 h1 {
+    margin-top: -6px;
     font-family: "Moderustic", sans-serif;
     /* 'Arial' é a fonte preferida, 'sans-serif' é a de reserva */
     font-size: 70px;
@@ -22,7 +23,7 @@ h1 {
 }
 
 .cadastro-content {
-    width: 50%;
+    width: 45%;
     height: 50%;
     text-align: center;
     justify-content: center;
@@ -30,29 +31,41 @@ h1 {
 }
 
 .cadastro-form {
-    width: 40%;
+    margin-top: 25px;
+    justify-content: center;
+    width: 30%;
     padding: 5%;
-    border-radius: 5px;
-    background: rgba(185, 118, 255, 0.8); /* Adicionado efeito de transparência */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adicionado uma leve sombra para destaque */
+    border-radius: 8px;
+    background: rgba(167, 101, 236, 0.8);
+    /* Adicionado efeito de transparência */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adicionado uma leve sombra para destaque */
 }
 
-.cadastro-form h1{
-    color: #9f5ee6;
-    font-size: 35px;
+.cadastro-form h1 {
+    color: #323133;
+    font-size: 25px;
+    text-align: center;
+}
+
+img {
+    width: 55%;
+
 }
 
 form {
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 10px;
+    margin-left: 5px;
     display: flex;
+    justify-content: center;
     border-radius: 5px;
-    width: 90%;
-    background-color: rgba(255, 255, 255, 0.9); /* Transparência no fundo do formulário */
+    height: 90%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Transparência no fundo do formulário */
     padding: 10%;
 }
-
 
 /* estilizando os imput */
 
@@ -62,7 +75,7 @@ input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #080808;
+    border: 2px solid #6d6b6b;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -76,7 +89,7 @@ input[type=password] {
 button {
     padding: 0px 0px;
     top: 5%;
-    background-color: #141414d6;
+    background-color: #201e1ed6;
     margin-top: 15px;
     color: white;
     border: none;
@@ -85,26 +98,21 @@ button {
     font-size: 16px;
     width: 35%;
     height: 25px;
-    /* Define a altura do botão */
-}
 
-.signup-link {
-    text-align: right;
-    margin-top: 15%;
 }
-
 
 /* Estilo específico para o link "Cadastrar-se" */
 .btn-cadastrar {
+
     font-size: 20px;
     text-align: left;
     /* Alinha o conteúdo à esquerda */
-    width: 60%;
+    width: 100%;
     /* Garante que o contêiner ocupe toda a largura */
     color: #8350e2;
-    justify-content: flex-end;
+
     /* Alinha o conteúdo à direita */
-    margin-left: 2px;
+    margin-left: 5px;
     /* Mover o texto um pouco para a direita, se necessário */
 }
 
@@ -116,10 +124,11 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    h1{
+    h1 {
         font-size: 56px;
         margin-bottom: 10%;
     }
+
     .cadastro {
         width: 100%;
         flex-direction: column;
@@ -139,4 +148,11 @@ footer {
 
     }
 
+    footer {
+        font-size: 15px;
+        height: 125px;
+        justify-content: flex-start;
+        flex-direction: column;
+       
+    }
 }
