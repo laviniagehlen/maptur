@@ -24,7 +24,6 @@ div.scroll-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(254, 253, 255, 0.822), 0 6px 20px 0 rgba(120, 33, 219, 0.19)
-    
 }
 
 /*comentários do carrossel*/
@@ -229,18 +228,33 @@ form input[type="submit"]:hover {
     /* Flexível com largura mínima de 300px */
 }
 
+/*aAvaliação*/
+.quadro-avaliacao{
+    content: '';
+    position: absolute;
+    top: -10px;   /* Ajusta a posição do quadro */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: #f0f0f0; /* Fundo do quadro */
+    border: 2px solid #ccc;    /* Borda do quadro */
+    border-radius: 8px;        /* Bordas arredondadas */
+    z-index: -1;               /* Fica atrás da div */
+  }
+
 .rating-container {
     text-align: center;
-    background: #fff;
+    background-color: #f0f0f0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width:  300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
     margin: 20px;
-    
-    
 }
-
 
 h1 {
     margin-bottom: 20px;
@@ -250,6 +264,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 10px;
+    
 }
 
 .star {
@@ -267,8 +282,8 @@ h1 {
     margin-top: 15px;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #0a0a0a;
-    margin: 20px;
+    color: #555;
+  
 }
 
 
@@ -288,6 +303,5 @@ h1 {
     .flex-content img {
         display: none;
     }
-
 
 }
