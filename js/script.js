@@ -46,8 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
   
         // Mostra a avaliação no feedback
-        feedback.textContent = `Você avaliou com ${rating} estrela(s). Obrigado!`;
+        feedback.textContent = `Você avaliou com ${rating} estrela(s)  👏✨. Obrigado!`;
 
+        
       });
     });
   });
