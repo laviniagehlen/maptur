@@ -131,15 +131,27 @@ body {
 .front h3 {
     color: white;
 }
+div .missao{
+    margin-left: 10%;
+}
+div .visao{
+    margin-left: 5%;
+}
+div .valor{
+    margin-left: 5%;
+    height: 5%;
+}
 
 
 .card-img .front img {
-    width: 80%;
+    width: 90%;
     height: 80%;
     border-radius: 10px;
+    align-items: center;
+    display:flex;
     /* Bordas arredondadas */
-
 }
+
 
 /* Estilo de trás do card (texto) */
 .card-img .back {
@@ -240,11 +252,16 @@ body {
         padding: 10px;
     }
 
-    .text-1,
+    .text-1 {
+        height: 5%;
+    }
+
     .img-1 {
         width: 100%;
         max-width: 100%;
         margin: 0;
+            flex-direction: column;
+        /* Alinha as imagens verticalmente em telas pequenas */
     }
 
     .img-banner2 {
@@ -262,9 +279,10 @@ body {
         width: 100%;
         /* Faz a imagem e o texto ocupar toda a largura */
         position: 1%;
+     
     }
 
-    .img-sobre2,
+    .img-sobre2
     .img-sobre3 {
         width: 100%;
         height: auto;
